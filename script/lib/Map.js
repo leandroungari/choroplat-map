@@ -63,9 +63,11 @@ class Map {
 			
 			d3.select('.cities').select(`.${a.class}`)
 			.attr('transform', `scale(${inicial.width/novo.width})`)
-			
-		
 
 		});
+
+		d3.selectAll("path")
+		.style('fill', 'blue')
+		.style('stroke', 'white');
 	}
 }
