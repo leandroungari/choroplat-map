@@ -9,10 +9,6 @@ class Map {
 		this.element
 		.append("g")
 		.attr('class','states');
-
-		this.element
-		.append("g")
-		.attr('class','cities');
 	}
 
 	initialize(data){
@@ -28,7 +24,7 @@ class Map {
 				.attr("title", e.title)
 				.attr("d", e.d)
 				.attr("id", e.id)
-				.on('mouseover', () => {
+				/*.on('mouseover', () => {
 
 					d3.select(d3.event.target)
 					.style('fill', 'black');
@@ -37,7 +33,7 @@ class Map {
 
 					d3.select(d3.event.target)
 					.style('fill', '#ccc');
-				});
+				})*/;
 
 		});
 
@@ -45,6 +41,11 @@ class Map {
 
 	loadStates(data){
 
+		if (this.element.selectAll('.cities')._groups[0].length != 0) return;
+
+		this.element
+		.append("g")
+		.attr('class','cities');
 
 		data.forEach((a) => {
 			
@@ -67,7 +68,12 @@ class Map {
 		});
 
 		d3.selectAll("path")
-		.style('fill', 'blue')
+		.style('fill', '#ccc')
 		.style('stroke', 'white');
+	}
+
+	removeStates(){
+		
+		d3.select('.cities').remove();
 	}
 }

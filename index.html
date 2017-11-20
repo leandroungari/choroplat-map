@@ -18,5 +18,41 @@
 </head>
 <body>
 	<svg width="620" height="650" class="map"></svg>
+	<div class="container">
+		<br>
+		<p>Selecione uma opção: </p>
+		<br>
+		<form class='opcoes-visualizacao'>
+			<select name="visualizacao">
+				<option value="1">IDHM Estadual</option>
+				<option value="2">IDHM - Educação Estadual</option>
+				<option value="3">IDHM - Longevidade Estadual</option>
+				<option value="4">IDHM - Renda Estadual</option>
+				<option value="5">IDHM Municipal</option>
+				<option value="6">IDHM - Educação Municipal</option>
+				<option value="7">IDHM - Longevidade Municipal</option>
+				<option value="8">IDHM - Renda Municipal</option>
+			</select>
+
+			<select name="ano-realizacao">
+				
+				<option value="2010">2010</option>
+				<option value="2000">2000</option>
+				<option value="1991">1991</option>
+			</select>
+			<br><br><br>
+			<p>Selecione a cor:</p><br>
+			<div style="margin-left: 15px;">
+				<div style="display: inline-block; width: 60px; text-align: center;">
+					<p>Cor inicial</p><input type="color" name="corInicial">
+				</div>
+				<div style="display: inline-block; width: 60px; text-align: center;">
+					<p>Cor final</p><input type="color" name="corFinal">
+				</div>
+			</div><br><br>
+			<input type="button" name="gerar" class="gerar" value="Gerar">
+		</form>
+	</div>
+
 </body>
 </html>

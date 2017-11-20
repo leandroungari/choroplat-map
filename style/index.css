@@ -3,3 +3,42 @@
 	margin: 0;
 }
 
+.map{
+	display: inline-block;
+	float: left;
+}
+
+.container{
+	display: inline-block;
+	float: right;
+	margin: 50px 30px;
+	width: 400px;
+	height: 260px;
+	border: 1px solid #ccc;
+	padding: 15px 20px;
+
+	font: 12px Tahoma;
+}
+
+.container select, .container input{
+	margin: 5px 3px;
+	padding: 5px 5px;
+	border: 1px solid #000;
+	background: #fff;
+}
+
+input[type='color']{
+	margin: 7px;
+	padding: 0;
+	width: 30px; height: 30px;
+	border: 0;
+	background: transparent;
+}
+
+.gerar{
+	float: right; cursor: pointer; 
+}
+
+.gerar:hover{
+	background: #000; color: #fff;
+}
