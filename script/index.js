@@ -28,10 +28,26 @@ class Request {
 	}
 }
 
+class Text {
+
+	static removerAcentos( text ) {
+		text = text.toLowerCase();                                                         
+		text = text.replace(new RegExp('[ÁÀÂÃ]','gi'), 'a');
+		text = text.replace(new RegExp('[ÉÈÊ]','gi'), 'e');
+		text = text.replace(new RegExp('[ÍÌÎ]','gi'), 'i');
+		text = text.replace(new RegExp('[ÓÒÔÕ]','gi'), 'o');
+		text = text.replace(new RegExp('[ÚÙÛ]','gi'), 'u');
+		text = text.replace(new RegExp('[Ç]','gi'), 'c');
+		text = text.replace(new RegExp('[ ]', 'g'),'-');
+		text = text.replace(new RegExp('[\']', 'g'),'');
+		return text;
+	}
+}
+
 class Color {
 
 	static hexToRgb(hex){
-		//console.log(hex);
+		
 		var c;
 		if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
 			c= hex.substring(1).split('');
@@ -41,6 +57,7 @@ class Color {
 			c= '0x'+c.join('');
 			return [(c>>16)&255, (c>>8)&255, c&255];
 		}
+
 		throw new Error('Bad Hex');
 	}
 }
@@ -52,59 +69,59 @@ class Visualization {
 		let req = new Request(`http://127.0.0.1:5000/cities/${opcaoAtual}/${anoAtual}`);
 
 		switch(opcaoAtual){
-				//IDHM Estadual
+				//IDHM Municipal
 				case numOpcoes+1:
 
 				req.open(
 
 				{
-					attributes: ['UF', 'IDHM']
+					attributes: ['Municipio','IDHM', 'UF']
 				},
 				(data) => {
 
-					Visualization.mostrarEstados(data);
+					Visualization.mostrarCidades(data);
 				}
 				);
 				break;
-			//IDHM Estadual - Educacao
+			//IDHM Municipal - Educacao
 			case numOpcoes+2:
 
 			req.open(
 
 			{
-				attributes: ['UF','IDHM_E']
+				attributes: ['Municipio','IDHM_E', 'UF']
 			},
 			(data) => {
 
-				Visualization.mostrarEstados(data);
+				Visualization.mostrarCidades(data);
 			}
 			);
 			break;
-			//IDHM Estadual Longevidade
+			//IDHM Municipal Longevidade
 			case numOpcoes+3:
 
 			req.open(
 
 			{
-				attributes: ['UF','IDHM_L']
+				attributes: ['Municipio','IDHM_L', 'UF']
 			},
 			(data) => {
 
-				Visualization.mostrarEstados(data);
+				Visualization.mostrarCidades(data);
 			}
 			);
 			break;
-			//IDHM Estadual Renda
+			//IDHM Municipal Renda
 			case numOpcoes+4:
 
 			req.open(
 
 			{
-				attributes: ['UF', 'IDHM_R']
+				attributes: ['Municipio', 'IDHM_R', 'UF']
 			},
 			(data) => {
 
-				Visualization.mostrarEstados(data);
+				Visualization.mostrarCidades(data);
 			}
 			);
 			break;
@@ -122,7 +139,7 @@ class Visualization {
 				req.open(
 
 				{
-					attributes: ['UF', 'IDHM']
+					attributes: ['UF', 'IDHM', 'UFN']
 				},
 				(data) => {
 
@@ -136,7 +153,7 @@ class Visualization {
 			req.open(
 
 			{
-				attributes: ['UF','IDHM_E']
+				attributes: ['UF','IDHM_E', 'UFN']
 			},
 			(data) => {
 
@@ -150,7 +167,7 @@ class Visualization {
 			req.open(
 
 			{
-				attributes: ['UF','IDHM', 'IDHM_E']
+				attributes: ['UF','IDHM_L', 'UFN']
 			},
 			(data) => {
 
@@ -164,7 +181,7 @@ class Visualization {
 			req.open(
 
 			{
-				attributes: ['UF','IDHM', 'IDHM_E']
+				attributes: ['UF','IDHM_R', 'UFN']
 			},
 			(data) => {
 
@@ -188,7 +205,21 @@ class Visualization {
 				${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
-			);
+			)
+			.attr('data-name', a[2])
+			.on('click', () => {
+				
+			});
+			/*.on('mouseover', () => {
+
+					d3.select(d3.event.target)
+					.style('fill', 'black');
+				})
+			.on('mouseout', () => {
+
+					d3.select(d3.event.target)
+					.style('fill', '#ccc');
+			})*/
 		});
 	}
 
@@ -197,14 +228,28 @@ class Visualization {
 		let corInicial = Color.hexToRgb(document.querySelector('[name="corInicial"]').value);
 		let corFinal = Color.hexToRgb(document.querySelector('[name="corFinal"]').value);
 
+		let selection = d3.select('.cities');
+		let df = `.state-br-df`;
 		data.forEach((a) => {
+			
+			
+			if (df == `.state-br-${a[2].toLowerCase()}`) {
+				d3.select('.states').select(`#BR-DF`)
+				.style('fill', `rgb(
+					${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
+					${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
+					${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
+					);
+			}
+			else{
 
-			d3.select('.states').select(`#BR-${a[0]}`)
+			}
+			selection.select(`.state-br-${a[2].toLowerCase()}`).selectAll(`[data-slug="${Text.removerAcentos(a[0])}"]`)
 			.style('fill', `rgb(
 				${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
-			);
+				);
 		});
 	}
 }
@@ -225,7 +270,6 @@ window.onload = () => {
 
 	document.querySelector('.gerar').addEventListener('click', () => {
 
-
 		//let opcaoAtual = Number.parseInt(selectVisualizacao.options[selectVisualizacao.selectedIndex].value);
 		let anoAtual = Number.parseInt(selectAno.options[selectAno.selectedIndex].value)
 
@@ -235,6 +279,7 @@ window.onload = () => {
 			Visualization.processarEstados(opcaoAtual, anoAtual);
 		}
 		else{
+
 			Visualization.processarCidades(opcaoAtual, anoAtual, numOpcoes);
 		}
 

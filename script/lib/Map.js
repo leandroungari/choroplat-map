@@ -75,5 +75,6 @@ class Map {
 	removeStates(){
 		
 		d3.select('.cities').remove();
+		//d3.select('.land').style('fill', '#ccc');
 	}
 }

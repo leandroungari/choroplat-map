@@ -26,25 +26,20 @@ def state(number, year):
 
 	file = File('../data/estados.csv')
 	lista = file.select(data['attributes'], year)
-	'''
-	if (number == 1):
-		
-	elif (number == 2):
-		
-	elif (number == 3):
-		
-	elif (number == 4):
-		
-	else:
-		print('error')
-	'''	
+
 	return jsonify(lista)
 
 
 # Lista os atributos especificados de todas as cidades do pais
-@app.route('/cities')
-def cities():
-	return 'Hello, Cities!'
+@app.route('/cities/<number>/<year>', methods=['GET', 'POST'])
+def cities(number, year):
+	data = json.loads(request.form['data'])
+
+
+	file = File('../data/cidades.csv')
+	lista = file.select(data['attributes'], year)
+
+	return jsonify(lista)
 
 
 #####################################
