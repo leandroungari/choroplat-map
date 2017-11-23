@@ -20,10 +20,10 @@ class Map {
 			.append('g')
 			.attr('class', `state-${e.id.toLowerCase()}`)
 			.append("path")
-				.attr("class", "land")
-				.attr("title", e.title)
-				.attr("d", e.d)
-				.attr("id", e.id)
+			.attr("class", "land")
+			.attr("title", e.title)
+			.attr("d", e.d)
+			.attr("id", e.id)
 				/*.on('mouseover', () => {
 
 					d3.select(d3.event.target)
@@ -35,7 +35,7 @@ class Map {
 					.style('fill', '#ccc');
 				})*/;
 
-		});
+			});
 
 	}
 
@@ -70,6 +70,44 @@ class Map {
 		d3.selectAll("path")
 		.style('fill', '#ccc')
 		.style('stroke', 'white');
+	}
+
+	processarDados(){
+
+		let req = new Request(`http://127.0.0.1:5000/states/1/2010`);
+		req.open({
+
+			attributes: ['UF', 'UFN']
+		},
+		(data) => {
+
+			data.forEach((a) => {
+				//group-state-br-mt
+				console.log(d3.select('.cities').select(`.group-state-br-${a[0].toLowerCase()}`))
+				d3.select('.cities').select(`.group-state-br-${a[0].toLowerCase()}`)
+				.attr('data-name', a[1])
+
+				.on('click', () => {
+
+				})
+				.on('mouseover', () => {
+
+					d3.select(d3.event.target)
+					.style('stroke', '#555')
+					.style('z-index', 10)
+					.style('stroke-width', 2);
+				})
+				.on('mouseout', () => {
+
+					d3.select(d3.event.target)
+					.style('stroke', '#fff')
+					.style('z-index', 0)
+					.style('stroke-width', 1);
+				});
+			});
+		});
+
+		
 	}
 
 	removeStates(){

@@ -139,7 +139,7 @@ class Visualization {
 				req.open(
 
 				{
-					attributes: ['UF', 'IDHM', 'UFN']
+					attributes: ['UF', 'IDHM']
 				},
 				(data) => {
 
@@ -153,7 +153,7 @@ class Visualization {
 			req.open(
 
 			{
-				attributes: ['UF','IDHM_E', 'UFN']
+				attributes: ['UF','IDHM_E']
 			},
 			(data) => {
 
@@ -167,7 +167,7 @@ class Visualization {
 			req.open(
 
 			{
-				attributes: ['UF','IDHM_L', 'UFN']
+				attributes: ['UF','IDHM_L']
 			},
 			(data) => {
 
@@ -181,7 +181,7 @@ class Visualization {
 			req.open(
 
 			{
-				attributes: ['UF','IDHM_R', 'UFN']
+				attributes: ['UF','IDHM_R']
 			},
 			(data) => {
 
@@ -205,21 +205,7 @@ class Visualization {
 				${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
-			)
-			.attr('data-name', a[2])
-			.on('click', () => {
-				
-			});
-			/*.on('mouseover', () => {
-
-					d3.select(d3.event.target)
-					.style('fill', 'black');
-				})
-			.on('mouseout', () => {
-
-					d3.select(d3.event.target)
-					.style('fill', '#ccc');
-			})*/
+				);
 		});
 	}
 
@@ -265,6 +251,7 @@ window.onload = () => {
 	let map = new Map(".map", "Mapa do Brasil");
 	map.initialize(data['brazil']);
 
+
 	let selectVisualizacao = document.querySelector('[name="visualizacao"]');
 	let selectAno = document.querySelector('[name="ano-realizacao"]');
 
@@ -292,6 +279,7 @@ window.onload = () => {
 
 		if (opcaoAtual > numOpcoes) {
 			map.loadStates(data['states']);
+			map.processarDados();
 		}
 		else{
 
