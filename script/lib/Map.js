@@ -74,6 +74,16 @@ class Map {
 
 	processarDados(){
 
+		var tip = d3.tip()
+		.attr('class', 'd3-tip')
+		.offset([-10, 0])
+		.html(function(d) {
+		
+			return "<strong>Frequency:</strong> <span style='color:red'>" + d+ "</span>";
+		})
+
+		d3.select('svg').call(tip);
+
 		let req = new Request(`http://127.0.0.1:5000/states/1/2010`);
 		req.open({
 
@@ -83,27 +93,26 @@ class Map {
 
 			data.forEach((a) => {
 				//group-state-br-mt
-				console.log(d3.select('.cities').select(`.group-state-br-${a[0].toLowerCase()}`))
+				//console.log(d3.select('.cities').select(`.group-state-br-${a[0].toLowerCase()}`))
 				d3.select('.cities').select(`.group-state-br-${a[0].toLowerCase()}`)
 				.attr('data-name', a[1])
 
 				.on('click', () => {
 
 				})
-				.on('mouseover', () => {
-
-					d3.select(d3.event.target)
+				.on('mouseover', tip.show
+					/*d3.select(d3.event.target)
 					.style('stroke', '#555')
 					.style('z-index', 10)
-					.style('stroke-width', 2);
-				})
-				.on('mouseout', () => {
+					.style('stroke-width', 2);*/
 
-					d3.select(d3.event.target)
+
+				)
+				.on('mouseout', tip.hide
+					/*d3.select(d3.event.target)
 					.style('stroke', '#fff')
 					.style('z-index', 0)
-					.style('stroke-width', 1);
-				});
+					.style('stroke-width', 1);*/ );
 			});
 		});
 
