@@ -9,6 +9,49 @@ class Map {
 		this.element
 		.append("g")
 		.attr('class','states');
+
+		this.zoom = () => {
+
+			d3.select('svg.map').attr("transform", d3.event.transform);
+		}
+
+		this.zoomAction = d3.zoom()
+		.scaleExtent([0.5, 8])
+		.on('zoom', this.zoom);
+		
+		let dx = 0, dy = 0;
+
+		this.element.call(d3.drag()
+			.on('start', function () {
+
+				if (d3.select(this).attr('transform') != null) {
+					let text = d3.select(this).attr('transform');
+					text = text.substring(10, text.length-1);					
+					let coord = text.split(',');
+
+					dx = d3.event.x - Number.parseFloat(coord[0]); dy = d3.event.y - Number.parseFloat(coord[1]);
+				}
+				else {
+
+					dx = d3.event.x; dy = d3.event.y;	
+				}
+
+				
+				d3.select(this).style('cursor', 'move');
+			})
+			.on('drag', function () {
+
+				d3.select(this).attr('transform', `translate(${d3.event.x - dx},${d3.event.y - dy})`);
+			})
+			.on('end', function () {
+
+				d3.select(this).style('cursor', 'normal');
+			})
+		);
+
+		this.element.call(this.zoomAction);
+
+		this.element.on("dblclick.zoom", null);
 	}
 
 	initialize(data){
@@ -49,21 +92,25 @@ class Map {
 
 		data.forEach((a) => {
 			
-			let inicial = d3.select('.states').select(`.${a.class}`).node().getBBox();
-			
-			d3.select('.cities')
-			.append('g')
-			.attr('class',`group-${a.class}`)
-			.attr('transform',`translate(${inicial.x - a.dx},${inicial.y - a.dy})`);
+			if (a.class != 'state-br-df') {
 
-			let selection = d3.select('.cities').select(`.group-${a.class}`);
-			selection
-			.html(selection.html() + a.content);
+				let inicial = d3.select('.states').select(`.${a.class}`).node().getBBox();
 
-			let novo = selection.node().getBBox();
+				d3.select('.cities')
+				.append('g')
+				.attr('class',`group-${a.class}`)
+				.attr('transform',`translate(${inicial.x - a.dx},${inicial.y - a.dy})`);
+
+				let selection = d3.select('.cities').select(`.group-${a.class}`);
+				selection
+				.html(selection.html() + a.content);
+
+				let novo = selection.node().getBBox();
+
+				d3.select('.cities').select(`.${a.class}`)
+				.attr('transform', `scale(${inicial.width/novo.width})`)
+			}
 			
-			d3.select('.cities').select(`.${a.class}`)
-			.attr('transform', `scale(${inicial.width/novo.width})`)
 
 		});
 
@@ -72,14 +119,15 @@ class Map {
 		.style('stroke', 'white');
 	}
 
-	processarDados(){
+	processarDadosEstados(){
 
 		var tip = d3.tip()
 		.attr('class', 'd3-tip')
 		.offset([-10, 0])
 		.html(function(d) {
-		
-			return "<strong>Frequency:</strong> <span style='color:red'>" + d+ "</span>";
+			let target = d3.select(d3.event.target);
+
+			return `<strong>Nome:</strong> ${target.attr('data-name')} <br><strong>Valor:</strong> ${target.attr('data-value') != null ? target.attr('data-value') : ' --- '}`;
 		})
 
 		d3.select('svg').call(tip);
@@ -92,30 +140,55 @@ class Map {
 		(data) => {
 
 			data.forEach((a) => {
-				//group-state-br-mt
-				//console.log(d3.select('.cities').select(`.group-state-br-${a[0].toLowerCase()}`))
-				d3.select('.cities').select(`.group-state-br-${a[0].toLowerCase()}`)
+
+				d3.select('.states').select(`#BR-${a[0]}`)
 				.attr('data-name', a[1])
-
-				.on('click', () => {
-
+				.on('mouseover', () => {
+					tip.show();
 				})
-				.on('mouseover', tip.show
-					/*d3.select(d3.event.target)
-					.style('stroke', '#555')
-					.style('z-index', 10)
-					.style('stroke-width', 2);*/
-
-
-				)
-				.on('mouseout', tip.hide
-					/*d3.select(d3.event.target)
-					.style('stroke', '#fff')
-					.style('z-index', 0)
-					.style('stroke-width', 1);*/ );
-			});
+				.on('mouseout', () => {
+					tip.hide(); 
+				});
+			})
 		});
+	}
 
+	processarDadosCidades(){
+		
+		var tip = d3.tip()
+		.attr('class', 'd3-tip')
+		.offset([-10, 0])
+		.html(function() {
+
+			let target = d3.select(d3.event.target);
+			return `<strong>Nome:</strong> ${target.attr('data-name')} <br>Valor: ${(target.attr('data-value') != null ? target.attr('data-value') : ' --- ')}`;
+		})
+
+		d3.select('svg').call(tip);
+
+		let req = new Request(`http://127.0.0.1:5000/cities/1/2010`);
+		req.open({
+
+			attributes: ['Municipio','UF']
+		},
+		(data) => {
+
+			let selection = d3.select('.cities');
+			data.forEach((a) => {
+				
+				selection.select(`.state-br-${a[1].toLowerCase()}`).selectAll(`[data-slug="${Text.removerAcentos(a[0])}"]`)
+				.attr('data-name', a[0].toLowerCase().replace(/^[\u00C0-\u1FFF\u2C00-\uD7FF\w]|\s[\u00C0-\u1FFF\u2C00-\uD7FF\w]/g, function(letter) {
+					return letter.toUpperCase();
+				}))
+				.on('mouseover', () => {
+					tip.show();
+				})
+				.on('mouseout', () => {
+					tip.hide();
+				});
+			})
+		});
+		
 		
 	}
 

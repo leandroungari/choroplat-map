@@ -205,7 +205,9 @@ class Visualization {
 				${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
 				${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
-				);
+				)
+			.attr('data-value', a[1]);
+
 		});
 	}
 
@@ -225,17 +227,21 @@ class Visualization {
 					${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
 					${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
 					${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
-					);
-			}
-			else{
+					)
+				.attr('data-value', a[1]);
 
 			}
-			selection.select(`.state-br-${a[2].toLowerCase()}`).selectAll(`[data-slug="${Text.removerAcentos(a[0])}"]`)
-			.style('fill', `rgb(
-				${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
-				${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
-				${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
-				);
+			else{
+				selection.select(`.state-br-${a[2].toLowerCase()}`).selectAll(`[data-slug="${Text.removerAcentos(a[0])}"]`)
+				.style('fill', `rgb(
+					${Number.parseInt(corInicial[0]*(1-Number.parseFloat(a[1])) + corFinal[0]*Number.parseFloat(a[1]))},
+					${Number.parseInt(corInicial[1]*(1-Number.parseFloat(a[1])) + corFinal[1]*Number.parseFloat(a[1]))},
+					${Number.parseInt(corInicial[2]*(1-Number.parseFloat(a[1])) + corFinal[2]*Number.parseFloat(a[1]))}`
+					)
+				.attr('data-value', a[1]);
+			}
+			
+
 		});
 	}
 }
@@ -250,6 +256,7 @@ window.onload = () => {
 
 	let map = new Map(".map", "Mapa do Brasil");
 	map.initialize(data['brazil']);
+	map.processarDadosEstados();
 
 
 	let selectVisualizacao = document.querySelector('[name="visualizacao"]');
@@ -257,7 +264,6 @@ window.onload = () => {
 
 	document.querySelector('.gerar').addEventListener('click', () => {
 
-		//let opcaoAtual = Number.parseInt(selectVisualizacao.options[selectVisualizacao.selectedIndex].value);
 		let anoAtual = Number.parseInt(selectAno.options[selectAno.selectedIndex].value)
 
 		
@@ -279,11 +285,12 @@ window.onload = () => {
 
 		if (opcaoAtual > numOpcoes) {
 			map.loadStates(data['states']);
-			map.processarDados();
+			map.processarDadosCidades();
 		}
 		else{
 
 			map.removeStates();
+			map.processarDadosEstados();
 		}
 	});
 }
