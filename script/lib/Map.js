@@ -20,15 +20,17 @@ class Map {
 		.on('zoom', this.zoom);
 		
 		let dx = 0, dy = 0;
+		let scale = "", translate = "";
 
 		this.element.call(d3.drag()
 			.on('start', function () {
 
 				if (d3.select(this).attr('transform') != null) {
 					let text = d3.select(this).attr('transform');
-					text = text.substring(10, text.length-1);					
+					let opcoes = text.split(' ');
+					text = opcoes[0].substring(10, opcoes[0].length-1);					
 					let coord = text.split(',');
-
+					scale = (opcoes[1] == null ? "" : opcoes[1])
 					dx = d3.event.x - Number.parseFloat(coord[0]); dy = d3.event.y - Number.parseFloat(coord[1]);
 				}
 				else {
@@ -41,7 +43,7 @@ class Map {
 			})
 			.on('drag', function () {
 
-				d3.select(this).attr('transform', `translate(${d3.event.x - dx},${d3.event.y - dy})`);
+				d3.select(this).attr('transform', `translate(${d3.event.x - dx},${d3.event.y - dy}) ${scale}`);
 			})
 			.on('end', function () {
 
