@@ -49,7 +49,7 @@ class Map {
 
 				d3.select(this).style('cursor', 'normal');
 			})
-		);
+			);
 
 		this.element.call(this.zoomAction);
 

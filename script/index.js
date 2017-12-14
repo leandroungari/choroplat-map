@@ -144,8 +144,7 @@ class Visualization {
 				(data) => {
 
 					Visualization.mostrarEstados(data);
-				}
-				);
+				});
 				break;
 			//IDHM Estadual - Educacao
 			case 2:
