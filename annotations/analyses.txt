@@ -1,0 +1,7 @@
+The Upshot came to this conclusion by looking at six data points for each county in the United States: 
+    - education (percentage of residents with at least a bachelor’s degree), 
+    - median household income, 
+    - unemployment rate, 
+    - disability rate, 
+    - life expectancy and obesity. 
+We then averaged each county’s relative rank in these categories to create an overall ranking.
