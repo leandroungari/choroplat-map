@@ -40,6 +40,16 @@ def cities(number, year):
 
 	return jsonify(lista)
 
+@app.route('/qualidadevida/<year>', methods=['GET', 'POST'])
+def qualidadevida(year):
+    	
+	data = json.loads(request.form['data'])
+
+	file = File('../data/cidades.csv')
+	lista = file.select(data['attributes'], year)
+
+	return jsonify(lista)
+
 
 #####################################
 if __name__ == '__main__':

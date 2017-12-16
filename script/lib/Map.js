@@ -16,7 +16,7 @@ class Map {
 		}
 
 		this.zoomAction = d3.zoom()
-		.scaleExtent([0.5, 8])
+		.scaleExtent([0.1, 8])
 		.on('zoom', this.zoom);
 		
 		let dx = 0, dy = 0;
