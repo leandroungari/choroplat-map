@@ -115,7 +115,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHM) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHM) / (div[0]),
 								a[2]
 							];
 
@@ -170,7 +170,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHME) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHME) / (div[0]),
 								a[2]
 							];
 
@@ -225,7 +225,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHML) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHML) / (div[0]),
 								a[2]
 							];
 
@@ -279,7 +279,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHMR) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHMR) / (div[0]),
 								a[2]
 							];
 
@@ -458,7 +458,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHM) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHM) / (div[0]),
 							];
 
 							value.push(item);
@@ -510,7 +510,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHME) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHME) / (div[0]),
 							];
 
 							value.push(item);
@@ -562,7 +562,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHML) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHML) / (div[0]),
 							];
 
 							value.push(item);
@@ -614,7 +614,7 @@ class Visualization {
 
 							let item = [
 								a[0],
-								(Number.parseFloat(a[1]) - minIDHMR) / (div[0] * 5),
+								(Number.parseFloat(a[1]) - minIDHMR) / (div[0]),
 							];
 
 							value.push(item);
@@ -652,7 +652,7 @@ class Visualization {
 
 		let selection = d3.select('.cities');
 		let df = `.state-br-df`;
-		console.log(data)
+	
 		data.forEach((a) => {
 
 
