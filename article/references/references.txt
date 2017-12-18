@@ -1,0 +1,21 @@
+@article{panhoca2007contribuiccao,
+  title={A contribui{\c{c}}{\~a}o da vulnerabilidade na determina{\c{c}}{\~a}o do {\'\i}ndice de desenvolvimento humano: estudando o estado de Santa Catarina},
+  author={Panhoca da Silva, Olga Maria and Panhoca, Luiz},
+  journal={Ci{\^e}ncia \& Sa{\'u}de Coletiva},
+  volume={12},
+  number={5},
+  year={2007},
+  publisher={SciELO Brasil}
+}
+
+https://www.nytimes.com/2014/06/26/upshot/where-are-the-hardest-places-to-live-in-the-us.html?smid=tw-nytimes&_r=1
+
+@article{rezende2005gestao,
+  title={A gest{\~a}o p{\'u}blica municipal e a efici{\^e}ncia dos gastos p{\'u}blicos: uma investiga{\c{c}}{\~a}o emp{\'\i}rica entre as pol{\'\i}ticas p{\'u}blicas e o {\'\i}ndice de desenvolvimento humano (IDH) dos munic{\'\i}pios do Estado de S{\~a}o Paulo},
+  author={Rezende, Amaury Jos{\'e} and Slomski, Valmor and Corrar, Luiz Jo{\~a}o},
+  journal={Revista Universo Cont{\'a}bil},
+  volume={1},
+  number={1},
+  pages={24--40},
+  year={2005}
+}

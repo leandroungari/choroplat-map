@@ -1,5 +1,3 @@
-
-
 class Request {
 
 	constructor(url) {
@@ -75,6 +73,7 @@ class Visualization {
 		} else {
 
 			if (opcaoAtual == 17 || opcaoAtual == 18) req = new Request(`http://127.0.0.1:5000/qualidadevida/${anoAtual}`);
+			else if (opcaoAtual == 19 || opcaoAtual == 20) req = new Request(`http://127.0.0.1:5000/evolucao`);
 			else req = new Request(`http://127.0.0.1:5000/cities/${opcaoAtual}/${anoAtual}`);
 		}
 
@@ -411,6 +410,56 @@ class Visualization {
 					}
 				);
 				break;
+
+				//IDHM Municipal
+			case numOpcoes + 11:
+
+				req.open({
+						attributes: ['Municipio', 'IDHM', 'UF']
+					},
+					(data) => {
+
+						Visualization.mostrarCidades(data);
+					}
+				);
+				break;
+
+				//IDHM Municipal (Ampliado)
+			case numOpcoes + 12:
+
+				req.open({
+						attributes: ['Municipio', 'IDHM', 'UF']
+					},
+					(data) => {
+
+						let minIDHM = Math.min.apply(Math, data.map((u) => {
+							return Number.parseFloat(u[1]);
+						}));
+
+						let maxIDHM = Math.max.apply(Math, data.map((u) => {
+							return Number.parseFloat(u[1]);
+						}));
+
+						let value = [];
+						let div = [
+							(maxIDHM - minIDHM)
+						];
+
+						data.forEach((a) => {
+
+							let item = [
+								a[0],
+								(Number.parseFloat(a[1]) - minIDHM) / (div[0]),
+								a[2]
+							];
+
+							value.push(item);
+						});
+
+						Visualization.mostrarCidades(value);
+					}
+				);
+				break;
 		}
 	}
 
@@ -654,7 +703,7 @@ class Visualization {
 
 		let selection = d3.select('.cities');
 		let df = `.state-br-df`;
-	
+
 		data.forEach((a) => {
 
 
@@ -735,10 +784,9 @@ window.onload = () => {
 
 		if (opcaoAtual <= numOpcoes) {
 			//somente estados
-			if (valor == 'br') chave = ".states"; 
+			if (valor == 'br') chave = ".states";
 			else chave = `.state-br-${valor}`;
-		}
-		else{
+		} else {
 			//estados e cidades
 			if (valor == 'br') chave = '.cities';
 			else chave = `.group-state-br-${valor}`;
@@ -753,8 +801,8 @@ window.onload = () => {
 		let width = document.querySelector(chave).getBBox().width;
 		let height = document.querySelector(chave).getBBox().height;
 
-		let dx = - document.querySelector(chave).getBBox().x;
-		let dy = - document.querySelector(chave).getBBox().y;
+		let dx = -document.querySelector(chave).getBBox().x;
+		let dy = -document.querySelector(chave).getBBox().y;
 
 		var node = document.querySelector(chave).cloneNode(true);
 		node.setAttribute('transform', `translate(${dx},${dy})`)
@@ -765,6 +813,6 @@ window.onload = () => {
 		</svg>
 		`;
 
-        saveAs(new Blob([content]), "image.svg");
+		saveAs(new Blob([content]), "image.svg");
 	});
 }

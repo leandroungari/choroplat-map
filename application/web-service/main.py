@@ -50,6 +50,16 @@ def qualidadevida(year):
 
 	return jsonify(lista)
 
+@app.route('/evolucao', methods=['GET', 'POST'])
+def evolucao():
+    	
+	data = json.loads(request.form['data'])
+
+	file = File('../data/cidades.csv')
+	lista = file.compare(data['attributes'])
+
+	return jsonify(lista)
+
 
 #####################################
 if __name__ == '__main__':
