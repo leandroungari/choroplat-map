@@ -1,7 +1,0 @@
-The Upshot came to this conclusion by looking at six data points for each county in the United States: 
-    1 - IDHM-E - education (percentage of residents with at least a bachelor’s degree), 
-    - RDPC - median household income, 
-    - T_DES - unemployment rate, 
-    - T_ATIV - disability rate, 
-    - ESPVIDA - life expectancy and obesity. 
-We then averaged each county’s relative rank in these categories to create an overall ranking.

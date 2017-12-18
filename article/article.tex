@@ -1,0 +1,1005 @@
+
+%% bare_conf.tex
+%% V1.4b
+%% 2015/08/26
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
+%% conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%*************************************************************************
+
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. The IEEE's font choices and paper sizes can   ***
+% *** trigger bugs that do not appear when using other class files.       ***                          ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+\documentclass[conference]{IEEEtran}
+% Some Computer Society conferences also require the compsoc mode option,
+% but others use the standard conference format.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[conference]{../sty/IEEEtran}
+
+
+
+
+
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/pkg/ifpdf
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+
+
+
+
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of the IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off
+% such as if a citation ever needs to be enclosed in parenthesis.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 5.0 (2009-03-20) and later if using hyperref.sty.
+% The latest version can be obtained at:
+% http://www.ctan.org/pkg/cite
+% The documentation is contained in the cite.sty file itself.
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{subfigure}
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  %\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation
+% can be obtained at: 
+% http://www.ctan.org/pkg/graphicx
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found at:
+% http://www.ctan.org/pkg/epslatex
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics.
+%
+% Note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/pkg/amsmath
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as the IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/pkg/algorithms
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/pkg/algorithmicx
+
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+%\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/pkg/array
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\ifCLASSOPTIONcompsoc
+%  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+%\else
+%  \usepackage[caption=false,font=footnotesize]{subfig}
+%\fi
+% subfig.sty, written by Steven Douglas Cochran, is the modern replacement
+% for subfigure.sty, the latter of which is no longer maintained and is
+% incompatible with some LaTeX packages including fixltx2e. However,
+% subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
+% which will override IEEEtran.cls' handling of captions and this will result
+% in non-IEEE style figure/table captions. To prevent this problem, be sure
+% and invoke subfig.sty's "caption=false" package option (available since
+% subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
+% handling of captions.
+% Note that the Computer Society format requires a larger sans serif font
+% than the serif footnote size font used in traditional IEEE formatting
+% and thus the need to invoke different subfig.sty package options depending
+% on whether compsoc mode has been enabled.
+%
+% The latest version and documentation of subfig.sty can be obtained at:
+% http://www.ctan.org/pkg/subfig
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure.
+% Be aware that LaTeX2e kernels dated 2015 and later have fixltx2e.sty's
+% corrections already built into the system in which case a warning will
+% be issued if an attempt is made to load fixltx2e.sty as it is no longer
+% needed.
+% The latest version and documentation can be found at:
+% http://www.ctan.org/pkg/fixltx2e
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/pkg/stfloats
+% Do not use the stfloats baselinefloat ability as the IEEE does not allow
+% \baselineskip to stretch. Authors submitting work to the IEEE should note
+% that the IEEE rarely uses double column equations and that authors should try
+% to avoid such use. Do not be tempted to use the cuted.sty or midfloat.sty
+% packages (also by Sigitas Tolusis) as the IEEE does not format its papers in
+% such ways.
+% Do not attempt to use stfloats with fixltx2e as they are incompatible.
+% Instead, use Morten Hogholm'a dblfloatfix which combines the features
+% of both fixltx2e and stfloats:
+%
+% \usepackage{dblfloatfix}
+% The latest version can be found at:
+% http://www.ctan.org/pkg/dblfloatfix
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+%\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version and documentation can be obtained at:
+% http://www.ctan.org/pkg/url
+% Basically, \url{my_url_here}.
+
+
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Técnica de Visualização Computacional Aplicada à Comparação de Variantes \textit{LBP} para Extração de Características em Imagens Faciais}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Caroline Mazini Rodrigues}
+\IEEEauthorblockA{Faculdade de Ci\^encias e Tecnologia\\
+Universidade Estadual Paulista - UNESP\\
+Presidente Prudente, SP\\
+Email: carolinemazinirodrigues@hotmail.com}}
+
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+% 
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3}, 
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+
+Uma imagem é formada por um conjunto de dados não-estruturados que podem, de alguma maneira, representar a natureza das formas que ela contém. Esses dados precisam ser estruturados para que possam ser representados e manipulados. Um tipo específico de imagens são as imagens faciais que podem ser utilizadas em diversas aplicações, incluindo o \textit{Reconhecimento Facial}. O sucesso do processo de reconhecimento depende de inúmeros fatores, dentre eles, da qualidade das características extraídas, ou seja, da maneira como os dados são estruturados. O método \textit{LBP} é baseado na descrição de texturas de imagens e é utilizado neste trabalho para a extração de características faciais. Para que seja possível comparar o desempenho das variantes \textit{LBP} utilizadas, as características obtidas são projetadas, utilizando técnicas de redução de dimensionalidade (\textit{PCA} e \textit{MDS}), em um \textit{Gráfico de Dispersão}.  
+     
+\end{abstract}
+
+% no keywords
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introdução}
+
+O reconhecimento de faces é algo facilmente realizado pelo ser humano. Desde a infância, esta habilidade possibilita a distinção entre pessoas familiares (cujas faces estão previamente armazendas na memória do observador) e desconhecidas, auxiliando na socialização e convivência em grupos e, tornando o indivíduo capaz de associar sentimentos à pessoas, apenas por meio da visão de faces. Dado o grau de importância do reconhecimento na sociedade, sistemas são desenvolvidos baseando-se na capacidade humana de reconhecer faces através de imagens, buscando garantir segurança e confiabilidade à aplicações atuais. 
+
+Sistemas computacionais que realizam o \textit{Reconhecimento Facial} (técnica biométrica) utilizam-se da \textit{Visão Computacional} para capacitar um computador na tarefa de ``ver'' como um ser humano (ou o mais próximo de um ser humano quanto possível). Para isso, o computador faz uso de métodos matemáticos e estatísticos que possibilitam a extração de características úteis para a fase de comparação das faces.
+
+Um dos métodos utilizados para a extração de características é o \textit{Local Binary Pattern}, ou \textit{LBP}. Este método consiste na obtenção de padrões binários locais que descrevam as texturas presentes na imagem. Assim que os padrões binários são obtidos, estes são utilizados para compor um histograma da imagem que servirá como característica para a comparação.
+
+Durante a fase de comparação podem ser utilizados diferentes tipos de classificadores, dentre eles os classificadores não-supervisionados, que incluem o uso de métricas de distância entre os histogramas e, consequentemente, entre as faces correspondentes. No entanto, mesmo possuindo os valores de distanciamento entre as faces calculados, pode não ser tão simples interpretar e detectar agrupamentos de faces. Dessa maneira, partindo do princípio de que o ser humano processa com maior facilidade variáveis visuais, utilizou-se uma técnica de \textit{Visualização Computacional} para representar as características extraídas de cada face.
+
+Existem inúmeras técnicas de \textit{Visualização Computacional} capazes de representar dados de maneira visual, a técnica utilizada neste trabalho é o \textit{Gráfico de Dispersão}, ou \textit{Scatterplot}. Nesta técnica, as características mais discriminantes de cada entidade que compõe o conjunto a ser analisado são projetadas como coordenadas $x$ e $y$, gerando um gráfico. Este gráfico, por ser um ferramenta visual, auxilia na interpretação geral dessas distâncias entre faces de forma mais rápida e intuitiva.
+
+O presente trabalho aborda na Seção \ref{sec_teoria} o método de extração de características \textit{LBP} assim como algumas de suas variantes; na Seção \ref{sec_tecnica} a técnica de \textit{Visualização Computacional} utilizada para representação das faces, já com as características extraídas; na Seção \ref{sec_experimentos} a descrição dos experimentos realizados e das bases de faces utilizadas; na Seção \ref{sec_resultados} os resultados encontrados a partir do sistema computacional implementado e; na Seção \ref{sec_conclusao} as conclusões obtidas por meio da visualização das características faciais.
+
+
+
+
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that the IEEE typically puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command,
+% and the \label for the overall figure must come after \caption.
+% \hfil is used as a separator to get equal spacing.
+% Watch out that the combined width of all the subfigures on a 
+% line do not exceed the text width or a line break will occur.
+%
+%\begin{figure*}[!t]
+%\centering
+%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
+%\label{fig_second_case}}
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat[]), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
+% labels, the optional argument to \subfloat must be present. If a
+% subcaption is not desired, just leave its contents blank,
+% e.g., \subfloat[].
+
+
+% An example of a floating table. Note that, for IEEE style tables, the
+% \caption command should come BEFORE the table and, given that table
+% captions serve much like titles, are usually capitalized except for words
+% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
+% and up, which are usually not capitalized unless they are the first or
+% last word of the caption. Table text will default to \footnotesize as
+% the IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that the IEEE does not put floats in the very first column
+% - or typically anywhere on the first page for that matter. Also,
+% in-text middle ("here") positioning is typically not used, but it
+% is allowed and encouraged for Computer Society conferences (but
+% not Computer Society journals). Most IEEE journals/conferences use
+% top floats exclusively. 
+% Note that, LaTeX2e, unlike IEEE journals/conferences, places
+% footnotes above bottom floats. This can be corrected via the
+% \fnbelowfloat command of the stfloats package.
+
+\section{Fundamentação Teórica}
+\label{sec_teoria}
+
+Um imagem é uma matriz de \textit{pixels} e pode ser definida como um conjunto de dados não-estruturados. A estruturação dos dados contidos na imagem é necessária para que seja possível obter informações e assim, ser capaz de classificar, agrupar, separar e até mesmo, reconhecer. Para que seja possível realizar a estruturação, é necessário extrair características das imagens, partindo dos \textit{pixels} presentes. O \textit{Local Binary Pattern} foi o método utlizado neste trabalho para realizar essa extração.
+
+O \textit{LBP}, se originou como uma técnica de descrição de texturas proposta em \cite{ojala}, e foi posteriormente utilizada para \textit{Reconhecimento Facial} em \cite{ahonen2}. Este método apresenta simplicidade computacional e pouca variação sob mudanças de iluminação (escala de cinza) \cite{livro4}. O conceito principal do \textit{LBP} é o mapeamento binário das diferenças de nível de cinza, \textit{Grey-Level Difference (GD)}, entre uma vizinhança e seu \textit{pixel} central. Uma \textit{GD}, no \textit{LBP} original, é codificada em 0's e 1's de acordo com a Equação \ref{eq_lbp_padrao}, onde $f_p$ é um \textit{pixel} da vizinhança e $f_c$ é o \textit{pixel} central. Cada um dos vizinhos contribui com seu valor binário para compôr um código LBP por meio da Equação \ref{eq_lbp_codigo}.
+
+\begin{equation}
+S(f_p - f_c) = \lbrace\begin{array}{c}
+ 1, f_p - f_c \geq 0
+  \\
+  0, f_p - f_c < 0
+  %
+\end{array}
+\label{eq_lbp_padrao}
+\end{equation}
+
+\begin{equation}
+LBP_{P,R} = \sum_{p=0}^{P-1} S(f_p - f_c)2^{p}
+\label{eq_lbp_codigo}
+\end{equation} 
+
+Como é possível observar na Equação \ref{eq_lbp_codigo}, o \textit{LBP} é representado por $LBP_{P,R}$ onde $P$ é a quantidade de vizinhos e $R$ é o raio de abrangência da vizinhança. Através da Figura \ref{fig_lbp_padrao} é possivel observar a execução do método \textit{LBP} para $P = 8$ e $R=1$. Apesar de originalmente contar com uma vizinhança quadrada, existem variações que possibilitam melhorias nos resultados, como a utilização da vizinhança circular, conforme exemplos representados pela Figura \ref{fig_lbp_circular}. Cada coordenada de um \textit{pixel} utilizado na comparação é obtida através das Equações \ref{eq_x_inter} e \ref{eq_y_inter}, onde $I(x,y)$ é o \textit{pixel} central da vizinhança \cite{livro2}, no entanto, alguns desses valores obtidos podem não ser inteiros, tonando impossível seu uso para representar um \textit{pixel} da matriz, assim, realiza-se uma interpolação para encontrar um valor aproximado de intensidade na posição em questão.
+
+
+
+\begin{equation}
+x_p = x+Rcos(\frac{2 \pi p}{P})
+\label{eq_x_inter}
+\end{equation} 
+
+\begin{equation}
+y_p = y-Rsin(\frac{2 \pi p}{P})
+\label{eq_y_inter}
+\end{equation}
+
+Além da vizinhança circular, pode-se focar em regiões de maior interesse na face, atribuindo diferentes pesos à comparação de \textit{pixels} de acordo com a importância que deseja-se dar para determinadas regiões durante o reconhecimento, como expresso em \cite{livro2}. Essas regiões de maior interesse podem ser olhos, nariz, boca e sobrancelhas, por exemplo, conforme Figura \ref{fig_lbp_malha}.
+
+
+
+\caption{Exemplo de  regiões de interesse utilizadas no LBP.}
+    \legend{Fonte: Retirado de \cite{lbp}.}
+    \label{fig_lbp_malha}
+\end{figure}
+
+Antes da comparação \textit{LBP}, a imagem pode ser dividida em $n$ sub-janelas que manterão os padrões locais. Assim que o código \textit{LBP} de cada um dos \textit{pixels} de uma sub-janela é encontrado, pode-se determinar o histograma relativo à cada um dos códigos binários dentro da região. O histograma final é obtido a partir da concatenação dos histogramas menores (das sub-janelas) e apresenta dimensionalidade $256n$ em um \textit{LBP} com vizinhança contendo 8 \textit{pixels}, por exemplo.
+
+Apesar da capacidade do método \textit{LBP} em descrever texturas, alguns problemas clássicos do \textit{Reconhecimento Facial} permanecer presentes, dentre eles problemas em reconhecer faces sob diferenças de postura, expressão, orientação, escala e, casos de oclusão, no entanto, é difícil encontrar uma técnica que possa solucionar todos esses problemas, assim, cada uma delas busca focar problemas específicos \cite{livro6}. Algumas destas técnicas combinam mais de um método ainda mantendo a essência do \textit{LBP} original e buscam trazer melhorias de desempenho. 
+
+\subsection{Algumas Variantes LBP}
+
+Uma das variantes é o \textit{Padrão Binário Local baseado no Gradiente}, ou \textit{Gradient-Based Local Binary Pattern (GLBP)}, que utiliza como limiar (\textit{threshold}), em uma vizinhaça com $P=8$, a diferença absoluta entre ($p_0,p_4$) e ($p_2,p_6$) de acordo com a Equação \ref{eq_glbp1}, onde $p_c$ é o \textit{pixel} central, $p_j$ é o j-ésimo vizinho, $P_{+}$ é dado pela Equação \ref{eq_glbp2} e $s(x)$ pela Equação \ref{eq_glbp_limiar} \cite{livro6}.
+
+\begin{equation}
+f_{GLBP}(x) = \sum_{j=0}^{7} s(P_{+} - |p_j - p_c|)2^{j}
+\label{eq_glbp1}
+\end{equation} 
+
+\begin{equation}
+P_{+} = \frac{1}{2}(|p_0 - p_4|+|p_2 - p_6|)
+\label{eq_glbp2}
+\end{equation}
+
+\begin{equation}
+s(x) = \lbrace\begin{array}{c}
+ 1, x>0
+   \\
+ 0, x\leq 0
+  %
+\end{array}
+\label{eq_glbp_limiar}
+\end{equation}
+
+A vantagem do \textit{GLBP} é que, como o limiar deixa de ser $0$ e passa a ser o gradiente da vizinhança, os códigos \textit{LBP} obtidos representarão os padrões mais discriminantes da face, destacando as regiões onde ocorre maior variação de textura, como os olhos, nariz e boca.
+
+Outra variante é o \textit{LBP Linear}, ou \textit{Local Linear Binary Pattern (LLBP)}, proposta em \cite{petpon}, cuja ideia central é encontrar o código binário linear horizontal e vertical separadamente, assim como a magnitude, caracterizando as mudanças de intensidade da imagem. A diferença entre o \textit{LBP} padrão e o \textit{LLBP} consiste basicamente na forma da vizinhança e nos pesos atribuídos a cada \textit{pixel} dela. A vizinhança é consitituída por uma linha reta na vertical e outra na horizontal de tamanho $N$, já os pesos começam a serem atribuídos aos \textit{pixels} diretamente adjacentes ao \textit{pixel} central, recebendo $2^{0}$, até os \textit{pixels} da exprema direita e esquerda, que recebem, no caso de uma vizinhança com $N=9$ por exemplo: $2^{\lceil 9/2 \rceil -2} = 2^{3}$. A aplicação de uma vizinhança com $N=9$ juntamente com os pesos de cada \textit{pixel} pode ser observada na Figura \ref{fig_llbp}. Pode-se também expressar pelas Equações \ref{eq_llbph}, \ref{eq_llbpv} e \ref{eq_llbpm} a contrução do \textit{LLBP} horizontal, ou $LLBP_h$, do \textit{LLBP} vertical, ou $LLBP_v$ e, \textit{LLBP} da magnitude, ou $LLBP_m$, respectivamente, tendo $c$ como a posição do \textit{pixel} central. A Figura \ref{fig_exLLBP} mostra a face original e a face depois da aplicação do LLBP horizontal, vertical e magnitude. 
+
+\begin{figure}[h]
+  \begin{center}
+    \leavevmode
+    \includegraphics[scale = 0.35]{Figuras/llbp.jpeg}
+    \caption{Exemplo de aplicação de vizinhança linear $N=9$ e pesos dos \textit{pixels}.}
+    \legend{Fonte: Retirado de \cite{petpon}.}
+    \label{fig_llbp}
+  \end{center}
+\end{figure}
+
+\begin{equation}
+LLBP_h = \sum_{n=1}^{c-1}s(h_n - h_c)2^{(c-n-1)} 
++ \sum_{n=c+1}^{N}s(h_n - h_c)2^{(n-c-1)}
+\label{eq_llbph}
+\end{equation} 
+
+\begin{equation}
+LLBP_v= \sum_{n=1}^{c-1}s(v_n - v_c)2^{(c-n-1)} 
++ \sum_{n=c+1}^{N}s(v_n - v_c)2^{(n-c-1)}
+\label{eq_llbpv}
+\end{equation} 
+
+\begin{equation}
+LLBP_m = \sqrt{LLBP_{h}^{2} + LLBP_{v}^{2}}
+\label{eq_llbpm}
+\end{equation}
+
+
+\begin{figure}[h]
+  \begin{center}
+    \leavevmode
+    
+    \subfigure[original.]{\includegraphics[scale=0.215]{Figuras/exLLBP1.jpg}}
+    \subfigure[operador horizontal.]{\includegraphics[scale=0.215]{Figuras/exLLBP2.jpg}}
+    \subfigure[operador vertical.]{\includegraphics[scale=0.215]{Figuras/exLLBP3.jpg}}
+    \subfigure[operador de magnitude.]{\includegraphics[scale=0.215]{Figuras/exLLBP4.jpg}}
+    
+   \caption{Face na qual foi a aplicada o operador LLBP com vizinhança de 9 \textit{pixels}.}
+    \legend{Fonte: Retirado de \cite{petpon}.}
+    \label{fig_exLLBP}
+  \end{center}
+\end{figure}
+
+\section{Técnica de Visualização}
+\label{sec_tecnica}
+
+A partir da estruturação dos dados das imagens faciais torna-se possível a aplicação de técnicas de \textit{Visualização Computacional}. Estas técnicas servem como um meio de analisar as similaridades e agrupamentos que possam determinar faces da mesma pessoa, assim como podem explicitar \textit{outliers}, faces que não se enquadrem na classe correspondente, e auxiliar na verificação da causa dessa ocorrência. A facilidade na absorção do conhecimento a partir de variáveis visuais simplifica a compreensão do desempenho de cada variante \textit{LBP} utilizada na extração de características.
+
+A técnica de visualização utilizada com o intuito de representar as características extraídas foi o \textit{Gráfico de Dispersão} (\textit{Scatterplot}), através de função já implementada do \textit{Matlab}, que busca mapear os atributos de cada entidade (face) representada em variáveis de posicionamento (coordenadas) no plano cartesiano. 
+
+O \textit{Gráfico de Dispersão}, tanto 2D quanto 3D, é uma das técnicas mais utilizadas na \textit{Visualização Computacional} \cite{scatter}. Isto porque, o ser humano possui grande capacidade de percepção de distâncias e posicionamento em um espaço delimitado \cite{scatter}. O uso desta técnica no contexto atual, proporciona facilidade na observação de proximidade entre faces.      
+
+
+\subsection{Redução de Dimensionalidade}
+
+Como as características extraídas excedem o número de coordenadas a serem mapeadas, é necessário o uso de uma técnica de redução de dimensionalidade. Partindo do conjunto composto pelos histogramas concatenados obtidos após a execução das técnicas \textit{LBP}, é preciso transformar os dados de forma que eles mantenham suas características principais em menor dimensão de atributos. Para isso, foram utilizados os métodos \textit{Análise do Componente Principal}, \textit{Principal Component Analysis (PCA)} e, \textit{Multidimensional Scaling} (\textit{MDS}).
+
+\subsubsection{\textbf{PCA}}
+
+É capaz de reduzir a dimensionalidade utilizando uma transformação linear onde o primeiro elemento principal é a combinação das dimensões de maior variância e o n-ésimo é a combinação linear de maior variância ortogonal a todos os componentes principais anteriores \cite{facial2}. O objetivo principal é definir as direções que melhor representam as características do conjunto de dados, conforme a Figura \ref{fig_pca1}.
+
+\begin{figure}[h]
+  \begin{center}
+    \leavevmode
+    \includegraphics[scale = 0.6]{Figuras/pca1.jpg}
+    \caption{Exemplo de vetores que melhor representam as características.}
+    \legend{Fonte: Retirado de \cite{pca}.}
+    \label{fig_pca1}
+  \end{center}
+\end{figure}
+
+O processo de execução do método consiste em:
+
+\begin{itemize}
+
+\item Encontrar a média de cada conjunto de características;
+
+\item Subtrair a média correspondente de cada característica;
+
+\item Encontrar a matriz de covariância, pela Equação \ref{eq_covariancia}, onde $ij$ é o elemento na linha $i$ e coluna $j$ e $\mu_{i} = E(X_{i})$ e $E(X)$ é o valor esperado;
+
+\begin{equation}
+x(i,j) = E[(X_{i} - \mu_{i})(X_{j} - \mu_{j})]
+\label{eq_covariancia}
+\end{equation}
+
+\item Obter os \textit{autovalores $(\lambda)$} e \textit{autovetores $(v)$} a partir da matriz de covariância, através da Equação \ref{eq_auto};
+
+\begin{equation}
+T(v) = \lambda v
+\label{eq_auto}
+\end{equation}
+
+\item Ordenar os \textit{autovetores} de forma decrescente em relação aos \textit{autovalores} correspondentes e assim utilizar os \textit{autovetores} que melhor classificam a face, ou seja, de maiores \textit{autovalores}. 
+
+\end{itemize}
+
+Os \textit{autovetores} mantidos são colocados em uma matriz e utilizados na composição do conjunto final de dados, expressa na Equação \ref{eq_comp_final_pca}, onde $M_{características}$ é a matriz de \textit{autovetores} escolhidos e $M_{dados}$ é a matriz de dados iniciais.
+
+\begin{equation}
+V_{final} = M_{características}. M_{dados}
+\label{eq_comp_final_pca}
+\end{equation}
+
+\subsubsection{\textbf{MDS}}
+
+Trata-se de uma classe de algoritmos para projeção multidimensional. Uma de suas implementações mais simples foi proposta em \cite{kruskal}, contando com o seguinte processo:
+
+\begin{itemize}
+
+\item Obter matriz de similaridade entre os pares de atributos da matriz de dados a serem projetados (pode-se utilizar distância euclidiana como métrica de similaridade);
+
+\item Definir uma matriz contento as coordenadas aproximadas (ou aleatórias) de cada uma das instâncias na projeção;
+
+\item Obter matriz de similaridade da matriz de coordenadas para projeção;
+
+\item Obter a diferença entre as matrizes de similaridade dos dados reais e dos dados projetados, esta diferença é chamada \textit{stress};
+
+\item Caso o valor do \textit{stress} não sofra modificações significativas ao longo das últimas iterações do processo ou seja suficientemente pequeno, o resultado passa a ser composto pelas coordenadas obtidas na matriz de projeção;
+
+\item Caso contrário, as coordenadas das instâncias projetadas são movidas seguindo a direção de diminuição do \textit{stress} e este é recalculado para uma próxima iteração.   
+
+\end{itemize}
+
+O algoritmo utilizado durante a implementação deste trabalho é uma função do \textit{Matlab}.
+
+\subsection{Variáveis Visuais e Interação}
+
+Além das coordenadas $x$ e $y$ que mapeam o posicionamento das faces, outras variáveis são utilizadas no \textit{Gráfico de Dispersao} desenvolvido para este trabalho, proporcionando melhor representação do conjunto de imagens, além de auxiliar na interação do usuário com o conjunto de dados. 
+
+A primeira dessas variáveis é a \textit{cor}, utilizada como forma de separação de classes, já que as imagens utilizadas são previamente nomeadas de acordo com a pessoa à qual a face pertence, assim, é possível observar a formação de grupos de acordo com a técnica de extração de características utilizada.
+
+A segunda variável é a forma, que é modificada de acordo com a seleção ou não seleção de uma classe de imagens. Assim que uma face é selecionada, ela e todas as demais faces pertencentes à mesma classe possuem a forma alterada para obter destaque em relação às demais, facilitando a análise de grupos. Além disso, assim que uma classe é selecionada, todas as suas entidades são conectadas por linhas pontilhadas, destacando o caminho que minimiza a distância entre os pares de entidades entidades. 
+
+Quando a seleção está ativa, um ambiente de navegação é habilitado e, caso qualquer uma das entidades do conjunto de dados seja selecionada, um rótulo com o identificador da imagem é exibido, podendo ser escondido com um clique do botão esquerdo. As teclas ENTER e ESC encerram o ambiente de navegação e todas as imagens cujos rótulos estão sendo exibidos são mostradas em tela. Quando a seleção de uma segunda classe é realizada com o ambiente de navegação já encerrado, a primeira classe até então selecionada volta à forma original, perdendo o destaque.
+
+\section{Experimentos}
+\label{sec_experimentos}
+
+Durante a fase de experimentação, definiu-se alguns parâmetros de teste nas categorias: variante \textit{LBP} para extração de características e tamanho de sub-janela de cada histograma produzido para as imagens. As variantes \textit{LBP} utilizadas foram:
+
+\begin{itemize}
+
+\item \textit{LBP} padrão
+
+\item \textit{LBP} circular
+
+\item \textit{LBP} circular gradiente
+
+\item \textit{LBP} linear
+
+\end{itemize} 
+
+O tamanho de sub-janela utilizado na construção do histograma define as regiões que manterão seus padrões locais. Quanto menor o tamanho da sub-janela, maior a dimensionalidade do histograma final formado pela concatenação dos histogramas locais. Os tamanhos utilizados foram:
+
+\begin{itemize}
+
+\item 500x500 \textit{pixels}
+
+\item 50x50 \textit{pixels}
+
+\end{itemize} 
+
+\subsection{Bases de Dados Faciais}
+
+Os experimentos ocorreram utilizando duas bases de dados faciais: a \textit{IMM Face Database} e a \textit{Japanese Female Facial Expression (JAFFE)}. As bases contém as seguintes especificações:
+
+\begin{description}
+
+\item[IMM:] contém 240 imagens \textit{RGB} anotadas (foram utilizadas as originais) de 40 pessoas (33 homens e 7 mulheres, com 6 imagens de cada um) sem óculos obtidas em janeiro de 2001, contando com diferenças de expressão, posicionamento e iluminação \cite{imm,imm2}.
+
+\item[JAFFE: ] contém 213 imagens faciais frontais em escala de cinza de 10 mulheres japonesas com 7 diferentes expressões faciais (6 expressões básicas e 1 neutra) \cite{jaffe}. 
+
+\end{description}
+
+\section{Resultados}
+\label{sec_resultados}
+
+Por meio dos experimentos realizados utilizando as duas bases de dados descritas, os seguintes resultados foram obtidos para cada técnica:
+
+
+O \textbf{\textit{LBP} padrão} representa a técnica orginal e mais básica do \textit{LBP}, os resultados obtidos para a projeção da base \textit{IMM} apresentam pequenos agrupamentos de entidades de cada classe, no entanto, classes diferente se encontram muito próximas, principalmente com o uso do método \textit{PCA} (Figura \ref{fig_lbp_result_padrao_imm_pca}). A projeção que utiliza o método \textit{MDS} (Figura \ref{fig_lbp_result_padrao_imm}) possibilita maior espalhamento das classes possibilitando melhor visualização das relações, assim como, o uso de sub-janelas menores (Figuras \ref{fig_lbp_result_padrao_imm_pca}(b) e \ref{fig_lbp_result_padrao_imm}(b)) proporciona melhorias para a extração de características e, consequentemente, para a projeção.
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/padrao500immPca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.25]{Figuras/padrao50immPca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} padrão e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_padrao_imm_pca}
+\end{figure}
+
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/padrao500imm.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/padrao50imm.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} padrão e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_padrao_imm}
+\end{figure}
+
+O \textit{LBP} padrão apresenta resultados similares para a base \textit{JAFFE}. As projeções que utilizando o método \textit{MDS} (Figura \ref{fig_lbp_result_padrao_jaffe}) proporcionam maior espalhamento entre-classes do que as projeções com o método \textit{PCA} (Figura \ref{fig_lbp_result_padrao_jaffe_pca}). Além disso, a extração de características feita com sub-janelas menores (Figuras \ref{fig_lbp_result_padrao_jaffe_pca}(b) e \ref{fig_lbp_result_padrao_jaffe}(b)) realizam aproximação intra-classes.
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/padrao500jaffePca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.25]{Figuras/padrao50jaffePca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} padrão e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_padrao_jaffe_pca}
+\end{figure}
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/padrao500jaffe.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/padrao50jaffe.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} padrão e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_padrao_jaffe}
+\end{figure}
+
+O \textbf{\textit{LBP} circular} apresenta resultados mais estáveis com relação à base \textit{IMM}. As visualizações cujos dados são extraídos a partir de sub-janelas menores (Figuras \ref{fig_lbp_result_circular_imm_pca}(b) e \ref{fig_lbp_result_circular_imm}(b)) continuam apresentando maior espalhamento entre-classes do que regiões com maiores sub-janelas (Figuras \ref{fig_lbp_result_circular_imm_pca}(a) e \ref{fig_lbp_result_circular_imm}(a)), possuindo, no entanto, uma variação menos pronunciada.
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/circular500immPca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/circular50immPca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} circular e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_imm_pca}
+\end{figure}
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/circular500imm.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/circular50imm.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} circular e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_imm}
+\end{figure}
+
+Para a base \textit{JAFFE}, pode-se observar que ocorre otimização nos agrupamentos de classe quando utiliza-se o \textit{LBP} circular ao invés do \textit{LBP} padrão. Além disso, o método de projeção \textit{MDS} (Figura \ref{fig_lbp_result_circular_jaffe}) apresenta melhores resultados que o método \textit{PCA} (Figura \ref{fig_lbp_result_circular_jaffe_pca}) com relação ao agrupamento intra-classes. As sub-janelas menores continuam apresentando resultados melhores para o distanciamento de classes diferentes.
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/circular500jaffePca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.25]{Figuras/circular50jaffePca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} circular e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_jaffe_pca}
+\end{figure}
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/circular500jaffe.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/circular50jaffe.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} circular e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_jaffe}
+\end{figure}
+
+O método do \textbf{\textit{LBP} circular gradiente}, como esperado, apresenta desempenho semelhante ao \textit{LBP} circular, já que conta com o mesmo princípio de extração, no entanto, como no \textit{LBP} circular gradiente procura-se ressaltar características mais discriminantes de cada face, este proporciona melhoria quanto ao distanciamento entre-classes. Dessa maneira, utilizando a base de dados \textit{IMM} (Figuras \ref{fig_lbp_result_circular_gradiente_imm_pca} e \ref{fig_lbp_result_circular_gradiente_imm}) as estruturas formadas nas visualizações não se modificam drasticamente com relação ao circular, apenas inclui maior distância entre os grupos formados. 
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/gradiente500immPca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.25]{Figuras/gradiente50immPca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} circular gradiente e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_gradiente_imm_pca}
+\end{figure}
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/gradiente500imm.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/gradiente50imm.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} circular gradiente e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_gradiente_imm}
+\end{figure}
+
+Da mesma maneira, ao utilizar a base \textit{JAFFE} (Figuras \ref{fig_lbp_result_circular_gradiente_jaffe_pca} e \ref{fig_lbp_result_circular_gradiente_jaffe}), os grupos formados pelo \textit{LBP} circular permanecem, mas tornam-se mais definidos.
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/gradiente500jaffePca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.25]{Figuras/gradiente50jaffePca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} circular gradiente e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_gradiente_jaffe_pca}
+\end{figure}
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/gradiente500jaffe.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/gradiente50jaffe.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} circular gradiente e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_circular_gradiente_jaffe}
+\end{figure}
+
+No \textbf{\textit{LBP} linear} os agrupamentos não são tão bem definidos quanto nos demais métodos. Nota-se que na base \textit{IMM} (Figuras \ref{fig_lbp_result_linear_imm_pca} e \ref{fig_lbp_result_linear_imm}) a diferença entre os tamanhos das sub-janelas gera mudança significativa na visualização, principalmente quando utilizado o método \textit{PCA} (Figura \ref{fig_lbp_result_linear_imm_pca}). 
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/linear500immPca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.25]{Figuras/linear50immPca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} linear e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_linear_imm_pca}
+\end{figure}
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/linear500imm.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/linear50imm.jpg}}
+\caption{Visualização da base de imagens faciais \textit{IMM} após extração de características por meio do \textit{LBP} linear e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_linear_imm}
+\end{figure}
+
+Aplicado à base \textit{JAFFE}, o \textit{LBP} linear utilizando o método \textit{PCA} (Figura \ref{fig_lbp_result_linear_jaffe_pca}) também não apresenta desempenho satisfatório, no entanto, quando aplicado juntamente com o método \textit{MDS} (Figura \ref{fig_lbp_result_linear_jaffe}) proporciona agrupamentos mais pronunciados.
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.25]{Figuras/linear500jaffePca.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.25]{Figuras/linear50jaffePca.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} linear e projeção utilizando \textit{PCA}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_linear_jaffe_pca}
+\end{figure}
+
+\begin{figure}[h]
+\center
+\leavevmode
+\subfigure[500x500.]{\includegraphics[scale=0.19]{Figuras/linear500jaffe.jpg}}
+\qquad
+\subfigure[50x50.]{\includegraphics[scale=0.19]{Figuras/linear50jaffe.jpg}}
+\caption{Visualização da base de imagens faciais \textit{JAFFE} após extração de características por meio do \textit{LBP} linear e projeção utilizando \textit{MDS}.}
+\legend{Fonte: Autoria própria.}
+ \label{fig_lbp_result_linear_jaffe}
+\end{figure}
+
+\section{Conclusões}
+\label{sec_conclusao}
+
+Com base nos resultados obtidos através dos experimentos pode-se notar que os métodos \textit{LBP} utilizados tornam-se eficazes quando as faces envolvidas não sofrem grandes variações de posicionamento, sofrendo um impacto menor quanto à variações de iluminação. Exemplos disso foram os experimentos utilizando a base \textit{IMM} que apresentaram agrupamento parcial de instâncias de cada classe, em razão da natureza das imagens (diferentes orientações das faces); por outro lado, os experimentos com a base \textit{JAFFE} mostraram agrupamentos definidos com maior precisão, já que esta base é constituída por imagens faciais frontais.
+
+Além disso, nota-se também que, em todos os experimentos, as visualizações que contam com as características extraídas através de sub-janelas menores apresentam maior espalhamento entre os agrupamentos formados e, caso estes agrupamentos sejam bem definidos pela metodologia de extração de características, ocorre uma ampliação do distanciamento entre-classes.
+
+Outra observação importante é que, o método \textit{LBP} circular gradiente produziu resultados melhores que os demais métodos experimentados durantes a formação de grupos da mesma classe.
+
+Por fim, deve-se destacar que, a técnica de redução de dimensionalidade \textit{MDS} apresentou resultados mais satisfatórios que a técnica \textit{PCA}, tornando a visualização mais clara e possibilitando com maior facilidade a observação das informações anteriormente apresentadas.  
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{Referencias/referencias}
+
+
+
+
+% that's all folks
+\end{document}
+
+

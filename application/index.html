@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Choroplat Map</title>
+	<link rel="stylesheet" href="style/visualization.css">
+	<link rel="stylesheet" href="style/index.css">
+
+	<script src="script/jquery.min.js"></script>
+	<script src="script/d3.v4.min.js"></script>
+	<script src="script/d3.tip.js"></script>
+
+	
+	<script src="script/lib/data-map.js"></script>
+	<script src="script/lib/Map.js"></script>
+
+
+	<script src="script/FileSaver.min.js"></script>
+	<script src="script/index.js"></script>
+</head>
+<body>
+	<svg width="620" height="650" class="map"></svg>
+	<div class="container">
+		<br>
+		<p>Selecione uma opção: </p>
+		<br>
+		<form class='opcoes-visualizacao'>
+			<select name="visualizacao">
+				<option value="1">IDHM Estadual</option>
+				<option value="2">IDHM Estadual (Ampliado)</option>
+				<option value="3">IDHM - Educação Estadual</option>
+				<option value="4">IDHM - Educação Estadual (Ampliado)</option>
+				<option value="5">IDHM - Longevidade Estadual</option>
+				<option value="6">IDHM - Longevidade Estadual (Ampliado)</option>
+				<option value="7">IDHM - Renda Estadual</option>
+				<option value="8">IDHM - Renda Estadual (Ampliado)</option>
+				<option value="9">IDHM Municipal</option>
+				<option value="10">IDHM Municipal (Ampliado)</option>
+				<option value="11">IDHM - Educação Municipal</option>
+				<option value="12">IDHM - Educação Municipal (Ampliado)</option>
+				<option value="13">IDHM - Longevidade Municipal</option>
+				<option value="14">IDHM - Longevidade Municipal (Ampliado)</option>
+				<option value="15">IDHM - Renda Municipal</option>
+				<option value="16">IDHM - Renda Municipal (Ampliado)</option>
+				<option value="17">Qualidade de Vida -  Municipal</option>
+				<option value="18">Qualidade de Vida -  Municipal (Ampliado)</option>
+			</select>
+
+			<select name="ano-realizacao">
+				<option value="2010">2010</option>
+				<option value="2000">2000</option>
+				<option value="1991">1991</option>
+			</select>
+			<br><br><br>
+			<p>Selecione a cor:</p><br>
+			<div style="margin-left: 15px;">
+				<div style="display: inline-block; width: 60px; text-align: center;">
+					<p>Cor inicial</p><input type="color" name="corInicial">
+				</div>
+				<div style="display: inline-block; width: 60px; text-align: center;">
+					<p>Cor final</p><input type="color" name="corFinal">
+				</div>
+			</div><br><br>
+			<input type="button" name="gerar" class="gerar" value="Gerar">
+			<br><br><br><br>
+			<p>Salvar como: </p>
+			<select name="selecao-salvar">
+				<option value="br">Brasil</option>
+				<option value="ac">Acre</option>
+				<option value="al">Alagoas</option>
+				<option value="ap">Amapá</option>
+				<option value="am">Amazonas</option>
+				<option value="ba">Bahia</option>
+				<option value="ce">Ceará</option>
+				<option value="df">Distrito Federal</option>
+				<option value="es">Espírito Santo</option>
+				<option value="go">Goiás</option>
+				<option value="ma">Maranhão</option>
+				<option value="mt">Mato Grosso</option>
+				<option value="ms">Mato Grosso do Sul</option>
+				<option value="Minas Gerais">Minas Gerais</option>
+				<option value="pa">Pará</option>
+				<option value="pb">Paraíba</option>
+				<option value="pr">Paraná</option>
+				<option value="pe">Pernambuco</option>
+				<option value="pi">Piauí</option>
+				<option value="rj">Rio de Janeiro</option>
+				<option value="rn">Rio Grande do Norte</option>
+				<option value="rs">Rio Grande do Sul</option>
+				<option value="ro">Rondônia</option>
+				<option value="rr">Roraima</option>
+				<option value="sc">Santa Catarina</option>
+				<option value="sp">São Paulo</option>
+				<option value="se">Sergipe</option>
+				<option value="to">Tocantins</option>
+			</select>
+			<input type="button" class="button-salvar" name="button-salvar" value="Salvar como ...">
+		</form>
+	</div>
+
+</body>
+</html>

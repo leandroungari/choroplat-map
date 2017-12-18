@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.map{
+	margin-top: 20px;
+	display: inline-block;
+
+}
+
+.container{
+	display: inline-block;
+	float: right;
+	margin: 50px 30px;
+	width: 400px;
+	height: 260px;
+	/*border: 1px solid #ccc;*/
+	padding: 15px 20px;
+
+	font: 12px Tahoma;
+}
+
+.container select, .container input{
+	margin: 5px 3px;
+	padding: 5px 5px;
+	border: 1px solid #000;
+	background: #fff;
+}
+
+input[type='color']{
+	margin: 7px;
+	padding: 0;
+	width: 30px; height: 30px;
+	border: 0;
+	background: transparent;
+}
+
+.gerar, .button-salvar{
+	float: right; cursor: pointer; 
+}
+
+.button-salvar{
+	cursor: pointer; 
+}
+
+.gerar:hover, .button-salvar:hover{
+	background: #000; color: #fff;
+}
