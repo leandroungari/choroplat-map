@@ -19,3 +19,25 @@ https://www.nytimes.com/2014/06/26/upshot/where-are-the-hardest-places-to-live-i
   pages={24--40},
   year={2005}
 }
+
+@article{boscoe2003visualization,
+  title={Visualization of the spatial scan statistic using nested circles},
+  author={Boscoe, Francis P and McLaughlin, Colleen and Schymura, Maria J and Kielb, Christine L},
+  journal={Health \& Place},
+  volume={9},
+  number={3},
+  pages={273--277},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@article{maceachren1998visualizing,
+  title={Visualizing georeferenced data: representing reliability of health statistics},
+  author={MacEachren, Alan M and Brewer, Cynthia A and Pickle, Linda W},
+  journal={Environment and planning A},
+  volume={30},
+  number={9},
+  pages={1547--1561},
+  year={1998},
+  publisher={SAGE Publications Sage UK: London, England}
+}
