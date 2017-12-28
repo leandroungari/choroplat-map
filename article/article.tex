@@ -15,6 +15,7 @@
 \begin{document}
 
 \renewcommand{\abstractname}{Resumo}
+\renewcommand{\refname}{REFERÊNCIAS}
 \renewcommand{\tablename}{TABELA}
 
 
@@ -135,8 +136,6 @@ Nesse primeiro estudo de caso, busca-se analisar a evolução dos dados de um in
 
 Nas Figuras~\ref{img:educacao-1991},~\ref{img:educacao-2000} e~\ref{img:educacao-2010} estão apresentados o IDH-M Educação de cada município dos anos de 1991, 2000 e 2010; respectivamente. Torna-se perceptível a presença de índices inferiores (tonalidades mais escuras), de forma significativa, nas regiões Norte e Nordeste, assim como em diversos outros pontos. 
 
-A partir do ano 2000, observa-se um crescimento no valor do indicador, principalmente nos estados do centro-sul. Por fim, no ano 2010, foi registrado um aumento significante em todo o país (tonalidades mais claras) de forma mais igualitária entre as regiões, ainda que inferior nas regiões Norte e Nordeste.
-
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.40\textwidth]{educacao-1991.png}
@@ -158,8 +157,12 @@ A partir do ano 2000, observa-se um crescimento no valor do indicador, principal
 \label{img:educacao-2010}
 \end{figure}
 
+A partir do ano 2000, observa-se um crescimento no valor do indicador, principalmente nos estados do centro-sul. Por fim, no ano 2010, foi registrado um aumento significante em todo o país (tonalidades mais claras) de forma mais igualitária entre as regiões, ainda que inferior nas regiões Norte e Nordeste.
+
 
 \subsection{Redimensionamento do Domínio de Dados}
+\label{section:redimensionamento}
+Nesse segundo estudo de caso, objetiva-se analisar o impacto da distribuição do conjunto de dados no processo de visualização computacional. Na Figura~\ref{img:histograma} é apresentada histograma da distribuição do índice de longevidade dos municípios brasileiros, referente ao ano de 2010, sendo dividido em classes com tamanho 0,1.
 
 \begin{figure}[!ht]
 \centering
@@ -168,12 +171,16 @@ A partir do ano 2000, observa-se um crescimento no valor do indicador, principal
 \label{img:histograma}
 \end{figure}
 
+Por meio do histograma, é possível notar a alta concentração do conjunto de dados entre as classes de 0,6 e 0,9; o que impacta diretamente no mapa representado na Figura~\ref{img:longevidade-absoluto}. Essa concentração elevada no domínio de dados influi de modo negativo na representação de poucas tonalidades e dificultando a interpretação visual, especialmente quando a cor escolhida não favorece a diferenciação de tons. 
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.40\textwidth]{longevidade.png}
 \caption{Índice de Longevidade com os valores originais (Fonte: Próprio autor).}
 \label{img:longevidade-absoluto}
 \end{figure}
+
+De modo a contornar essa questão, foi realizado um redimensionamento do domínio de dados de forma a englobar a maior quantidade de tonalidades possíveis, para isto, os dados de entrada foram normalizados baseando-se nos valores mínimo e máximo. Como resultado do processamento, foi obtida a Figura~\ref{img:longevidade-ampliado}, composta por uma maior quantidade de variações, o que proporciona melhor distinção dos dados representados por parte do usuário.
 
 \begin{figure}[!ht]
 \centering
@@ -185,6 +192,7 @@ A partir do ano 2000, observa-se um crescimento no valor do indicador, principal
 
 \subsection{Evolução dos Índice de Desenvolvimento Humano}
 
+Nesse terceiro estudo de caso, busca-se avaliar a utilização da representação visual para realização de um comparativo da evolução do conjunto de dados em um período de tempo específico. Como objeto de comparação foram utilizados os índices de desenvolvimento cada município brasileiro dos anos de 1991 e 2010, sendo aplicadas a diferença entre os valores dos indicadores de cada ano, de modo a obter a evolução numérica absoluta.
 
 \begin{figure}[!ht]
 \centering
@@ -193,7 +201,15 @@ A partir do ano 2000, observa-se um crescimento no valor do indicador, principal
 \label{img:evolucao-idh}
 \end{figure}
 
+Na Figura~\ref{img:evolucao-idh}, é possível observar no mapa, cujos dados foram normalizados pelo processo descrito na Seção~\ref{section:redimensionamento}, a presença de municípios com os maiores crescimentos absolutos no período (tonalidades mais claras) distribuídas de forma aleatória, porém com maior ocorrência na região Centro-Oeste. Por outro lado, em relação aos municípios que indicaram os menores crescimentos (tonalidades mais escuras), há duas situações extremamente opostas; a primeira, na qual municípios com indicadores mais elevados apresentaram um crescimento pequeno, perante aos excelentes índices apresentados previamente; e a segunda situação, em que os municípios com os piores indicadores não conseguiram apresentar crescimento significativo perante a restrita situação.
+
+De modo geral, esse estudo de caso evidencia os dois extremos sociais do Brasil, o primeiro grupo com altos índices, o que dificulta a presença de grandes variações, enquanto o outro grupo composto por municípios com maiores restrições a recursos e, consequentemente, dificuldade no crescimento dos indicadores. 
+
 \subsection{Qualidade de Vida no Brasil}
+
+Por fim, nesse estudo de caso objetiva-se analisar a qualidade de vida dos municípios brasileiros através da análise de um conjunto de indicadores. 
+
+Em 2014, foi conduzido uma pesquisa entitulada \textit{Where Are the Hardest Places to Live in the U.S.?}, cuja visualização está representada na Figura~\ref{img:lugares-viver-usa}, que objetivava a avaliação dos cidades norte-americanas sob os seguintes indicadores: educação (porcentagem de residentes com pelo menos o nível de bacharelado), renda média domiciliar, taxa de desemprego, taxa de ocupação, expectativa de vida e obesidade.
 
 \begin{figure}[!ht]
 \centering
@@ -202,6 +218,8 @@ A partir do ano 2000, observa-se um crescimento no valor do indicador, principal
 \label{img:lugares-viver-usa}
 \end{figure}
 
+De modo análogo, nesse estudo de caso foi realizada a mesma avaliação utilizando os dados provenientes da base de dados referentes aos municípios brasileiros. Os atributos utilizados de forma equivalente foram os seguintes: IDH-M Educação, renda per capita, taxa de desemprego, taxa de atividade e esperança de vida. 
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.40\textwidth]{qualidade-de-vida.png}
@@ -209,9 +227,15 @@ A partir do ano 2000, observa-se um crescimento no valor do indicador, principal
 \label{img:qualidade-de-vida-brasil}
 \end{figure}
 
+O resultado é apresentado na Figura~\ref{img:qualidade-de-vida-brasil}, cuja representação utiliza a interpolação entre as cores laranja (menor qualidade de vida) e azul (maior qualidade de vida), na qual é possível observar um predomínio dos melhores índices na regiões Sul, Sudeste e Centro-Oeste. Como destaque dos melhores índices temos as capitais dos estados na faixa centro-sul do país e diversos municípios do interior dos estados de São Paulo, Paraná, Minas Gerais, Santa Catarina, Rio Grande do Sul e Rio de Janeiro. Como destaque negativo tem-se as regiões Norte e Nordeste, em que inclusive a maioria das capitais tem índices inferiores a muitos municípios das demais regiões.
+
 \section{Conclusão}
 \label{section:conclusao}
-The conclusion goes here.
+Em suma, com base nos resultados obtidos dos estudos de casos executados e presentes neste trabalho, assim como os que não foram incluídos (análises referentes a renda e longevidade, de municípios e estados no três períodos citados), em relação ao conjunto de dados socioeconômicos, é possível observar a diferença relevante na qualidade de vida nas regiões Sul e Sudeste em detrimento das regiões Norte e Nordeste, em que, vale-se ressaltar o crescimento do nível dos indicadores referentes aos municípios da região Centro-Oeste, principalmente no período entre 2000 e 2010.
+
+Em relação a utilização da técnica de visualização computacional \textit{Choropleth Map}, essa consiste em uma opção intuitiva e de interpretação facilitada, principalmente se forem adotadas tonalidades de cores ou degradês de simples distinção ao olhar humano, ressaltando possíveis deficiências cromáticas visuais. No caso específico do mapa coroplético do território brasileiro, deve-se salientar dois pontos, a grande extensão territorial facilita a perda de detalhes para interpretação e a excessiva fragmentação e irregularidade de formato dos municípios (quando comparado o mapa brasileiro na Figura~\ref{img:qualidade-de-vida-brasil} e norte-americano na Figura~\ref{img:lugares-viver-usa}) em sua maioria combinada com o uso inadequado de uma cor pode viabilizar uma interpretação errônea em decorrência da proporção espacial das divisas territoriais e seus respectivos municípios.
+
+Portanto, o uso de mapas coropléticos para a visualização de dados dessa categoria (georreferenciados) trata-se de umas das melhores opções, ressaltando a adequada escolha de cores, tonalidades e proporções espaciais de modo a não inferir na interpretação do usuário.s
 
 
 
@@ -250,7 +274,7 @@ Torguson, J. S. 2017. Choropleth Map. The International Encyclopedia of Geograph
 MacEachren, A M. Some Truth with Maps: a primer on symbolization \& design. Association of American Geographers. 1994.
 
 \bibitem{nytimes}
-Fippen, Alan. \emph{Where Are the Hardest Places to Live in the U.S.?}. Disponível em: <https://www.nytimes.com/2014/06/26/upshot/where-are-the-hardest-places-to-live-in-the-us.html>. Acesso em: 26 dez. 2017.
+Fippen, Alan. \emph{Where Are the Hardest Places to Live in the U.S.?}. Disponível em: https://www.nytimes.com/2014/06/26/upshot/where-are-the-hardest-places-to-live-in-the-us.html. Acesso em: 26 dez. 2017.
 
 \end{thebibliography}
 
