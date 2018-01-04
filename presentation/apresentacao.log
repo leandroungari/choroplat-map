@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  4 JAN 2018 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  4 JAN 2018 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1153,21 +1153,21 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 (./apresentacao.aux)
 \openout1 = `apresentacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 110
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 112
 .
  (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1236,7 +1236,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 110.
+Package hyperref Info: Link coloring OFF on input line 112.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1246,60 +1246,60 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count166
 )
-LaTeX Info: Redefining \ref on input line 110.
-LaTeX Info: Redefining \pageref on input line 110.
-LaTeX Info: Redefining \nameref on input line 110.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
 
 (./apresentacao.out) (./apresentacao.out)
 \@outlinefile=\write5
 \openout5 = `apresentacao.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 110.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 110.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 110.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 110.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 112.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 110.
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 110.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 110.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 110.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 110.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 110.
+(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 110.
+(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 110.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 110.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 110.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 110.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 110.
+(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 110.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 110.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 110.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 110.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 112.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1325,11 +1325,11 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 110.
+LaTeX Info: Redefining \includegraphics on input line 112.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 110.
-LaTeX Info: Redefining \microtypecontext on input line 110.
+LaTeX Info: Redefining \selectfont on input line 112.
+LaTeX Info: Redefining \microtypecontext on input line 112.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1345,38 +1345,40 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
  (./apresentacao.nav)
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 114.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 116.
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./apresentacao.toc) [2
 
+] [3
+
 ]
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 148.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 162.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 148
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 162
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 148
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 162
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 148.
+(Font)              <10.95> on input line 162.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 148.
+(Font)              <8> on input line 162.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 148.
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+(Font)              <6> on input line 162.
+LaTeX Font Info:    Try loading font information for U+msa on input line 162.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1384,7 +1386,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+LaTeX Font Info:    Try loading font information for U+msb on input line 162.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1393,52 +1395,136 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 148.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 162.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 148.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 162.
 
 
-<images/experimento.jpg, id=73, 240.9pt x 240.9pt>
-File: images/experimento.jpg Graphic file (type jpg)
+<images/atlas.png, id=128, 15.22746pt x 18.36963pt>
+File: images/atlas.png Graphic file (type png)
+ <use images/atlas.png>
+Package pdftex.def Info: images/atlas.png used on input line 162.
+(pdftex.def)             Requested size: 35.8512pt x 43.25128pt.
 
-<use images/experimento.jpg>
-Package pdftex.def Info: images/experimento.jpg used on input line 148.
-(pdftex.def)             Requested size: 84.31625pt x 84.31625pt.
- [3
+[4
 
- <./images/experimento.jpg>]
-<images/box.jpg, id=100, 770.88pt x 485.56406pt>
-File: images/box.jpg Graphic file (type jpg)
- <use images/box.jpg>
-Package pdftex.def Info: images/box.jpg used on input line 172.
-(pdftex.def)             Requested size: 154.17326pt x 97.11108pt.
- [4
+ <./images/atlas.png>] <images/pnud.png, id=161, 225.84375pt x 225.84375pt>
+File: images/pnud.png Graphic file (type png)
 
- <./images/box.jpg>] <images/paper.jpg, id=128, 770.88pt x 770.88pt>
-File: images/paper.jpg Graphic file (type jpg)
-
-<use images/paper.jpg>
-Package pdftex.def Info: images/paper.jpg used on input line 201.
-(pdftex.def)             Requested size: 154.17326pt x 154.17326pt.
+<use images/pnud.png>
+Package pdftex.def Info: images/pnud.png used on input line 195.
+(pdftex.def)             Requested size: 89.62556pt x 89.62599pt.
  [5
 
- <./images/paper.jpg>] [6
+ <./images/pnud.png>] [6
 
 ] [7
 
-] [8
+]
+<images/boston-density.jpg, id=252, 738.76pt x 554.07pt>
+File: images/boston-density.jpg Graphic file (type jpg)
 
-] [9
+<use images/boston-density.jpg>
+Package pdftex.def Info: images/boston-density.jpg used on input line 242.
+(pdftex.def)             Requested size: 179.25114pt x 134.43367pt.
+ [8
 
-] [10
+ <./images/boston-density.jpg>]
+<images/analfabetismo-franca.jpg, id=281, 328.46715pt x 344.36655pt>
+File: images/analfabetismo-franca.jpg Graphic file (type jpg)
 
-] [11
+<use images/analfabetismo-franca.jpg>
+Package pdftex.def Info: images/analfabetismo-franca.jpg used on input line 269
+.
+(pdftex.def)             Requested size: 119.50279pt x 125.2855pt.
+ [9
+
+ <./images/analfabetismo-franca.jpg>]
+[10
+
+] <images/educacao-1991.png, id=339, 612.2875pt x 640.3925pt>
+File: images/educacao-1991.png Graphic file (type png)
+
+<use images/educacao-1991.png>
+Package pdftex.def Info: images/educacao-1991.png used on input line 291.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [11
+
+ <./images/educacao-1991.png>]
+<images/educacao-2000.png, id=371, 612.2875pt x 640.3925pt>
+File: images/educacao-2000.png Graphic file (type png)
+
+<use images/educacao-2000.png>
+Package pdftex.def Info: images/educacao-2000.png used on input line 304.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [12
+
+ <./images/educacao-2000.png>]
+<images/educacao-2010.png, id=402, 612.2875pt x 640.3925pt>
+File: images/educacao-2010.png Graphic file (type png)
+
+<use images/educacao-2010.png>
+Package pdftex.def Info: images/educacao-2010.png used on input line 317.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [13
+
+ <./images/educacao-2010.png>]
+<images/longevidade.png, id=434, 612.2875pt x 640.3925pt>
+File: images/longevidade.png Graphic file (type png)
+
+<use images/longevidade.png>
+Package pdftex.def Info: images/longevidade.png used on input line 329.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [14
+
+ <./images/longevidade.png>]
+<images/frequencia.png, id=466, 559.67233pt x 342.86232pt>
+File: images/frequencia.png Graphic file (type png)
+
+<use images/frequencia.png>
+Package pdftex.def Info: images/frequencia.png used on input line 341.
+(pdftex.def)             Requested size: 131.45245pt x 80.53079pt.
+ [15
+
+ <./images/frequencia.png>]
+<images/longevidade-ampliado.png, id=497, 612.2875pt x 640.3925pt>
+File: images/longevidade-ampliado.png Graphic file (type png)
+
+<use images/longevidade-ampliado.png>
+Package pdftex.def Info: images/longevidade-ampliado.png used on input line 353
+.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [16
+
+ <./images/longevidade-ampliado.png>]
+File: images/educacao-2010.png Graphic file (type png)
+
+<use images/educacao-2010.png>
+Package pdftex.def Info: images/educacao-2010.png used on input line 366.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [17
 
 ]
-[12
+<images/usa.png, id=557, 881.52592pt x 594.96698pt>
+File: images/usa.png Graphic file (type png)
+ <use images/usa.png>
+Package pdftex.def Info: images/usa.png used on input line 378.
+(pdftex.def)             Requested size: 239.00558pt x 161.30595pt.
 
-] [13
+[18
+
+ <./images/usa.png>]
+<images/qualidade-de-vida.png, id=589, 612.2875pt x 640.3925pt>
+File: images/qualidade-de-vida.png Graphic file (type png)
+
+<use images/qualidade-de-vida.png>
+Package pdftex.def Info: images/qualidade-de-vida.png used on input line 390.
+(pdftex.def)             Requested size: 159.333pt x 166.64468pt.
+ [19
+
+ <./images/qualidade-de-vida.png>]
+[20
 
 ]
 \tf@nav=\write6
@@ -1450,31 +1536,31 @@ Package pdftex.def Info: images/paper.jpg used on input line 201.
 \tf@snm=\write8
 \openout8 = `apresentacao.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 404.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 404.
  (./apresentacao.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 404.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 404.
 Package rerunfilecheck Info: File `apresentacao.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
+(rerunfilecheck)             Checksum: 5048FB5539BBD39F9E58149186AE349F;169.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 404.
  ) 
 Here is how much of TeX's memory you used:
- 18724 strings out of 494792
- 353193 string characters out of 6176497
- 449360 words of memory out of 5000000
- 21531 multiletter control sequences out of 15000+600000
+ 18812 strings out of 494792
+ 354662 string characters out of 6176497
+ 450362 words of memory out of 5000000
+ 21591 multiletter control sequences out of 15000+600000
  33048 words of font info for 45 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 56i,19n,56p,392b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,23n,56p,392b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb>
-Output written on apresentacao.pdf (13 pages, 765387 bytes).
+/lm/lmsso8.pfb>
+Output written on apresentacao.pdf (20 pages, 2956578 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 27 named destinations out of 1000 (max. 500000)
- 9274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 613 compressed objects within 7 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 9343 words of extra memory for PDF output out of 10000 (max. 10000000)
 

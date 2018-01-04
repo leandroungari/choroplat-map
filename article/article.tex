@@ -115,7 +115,7 @@ A representados dos dados relativos ao Índice de Desenvolvimento Humano exige a
 
 O conjunto de dados dos atributos, em geral, são agrupados em classes para simplificar o padrão de distribuição. As unidades de enumeração são então simbolizadas, de modo que cores, sombras, padrões e outras variáveis visuais retratam áreas de valores de atributo mais altos e inferiores~\cite{torguson}. 
 
-O termo \textit{Choropleth Map}, foi primeiramente utilizado pelo geógrafo americano John Kirtland Wright em 1938, na sua obra \textit{Problems in Population Mapping}. Por sua vez, o primeiro mapa dessa categoria conhecido foi construído pelo cartógrafo francês Pierre Charles François Dupin, representa na Figura~\ref{img:analfabetismo-franca}, em que são representados os índices de analfabetismo nas províncias francesas~\cite{mac}.
+O termo \textit{Choropleth Map}, foi primeiramente utilizado pelo geógrafo americano John Kirtland Wright em 1938, na sua obra \textit{Problems in Population Mapping}. Por sua vez, o primeiro mapa dessa categoria conhecido foi construído pelo cartógrafo francês Pierre Charles François Dupin, representa na Figura~\ref{img:analfabetismo-franca}, em que são representados os índices de analfabetismo nas províncias francesas em 1826~\cite{mac}.
 
 \begin{figure}[!ht]
 \centering
@@ -194,14 +194,32 @@ De modo a contornar essa questão, foi realizado um redimensionamento do domíni
 
 Nesse terceiro estudo de caso, busca-se avaliar a utilização da representação visual para realização de um comparativo da evolução do conjunto de dados em um período de tempo específico. Como objeto de comparação foram utilizados os índices de desenvolvimento cada município brasileiro dos anos de 1991 e 2010, sendo aplicadas a diferença entre os valores dos indicadores de cada ano, de modo a obter a evolução numérica absoluta.
 
+As Figuras~\ref{img:idh-1991} e~\ref{img:idh-2010} apresentam o índice de desenvolvimento humano para cada um dos municípios brasileiros. Enquanto a Figura~\ref{img:evolucao-idh} apresenta a diferença normalizada (cujos dados também foram normalizados pelo processo descrito na Seção~\ref{section:redimensionamento}) entre os dois mapas anteriores.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.40\textwidth]{idh-1991.png}
+\caption{Índice de desenvolvimento humano em 1991 (Fonte: Próprio autor).}
+\label{img:idh-1991}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.40\textwidth]{idh-2010.png}
+\caption{Índice de desenvolvimento humano em 2010 (Fonte: Próprio autor).}
+\label{img:idh-2010}
+\end{figure}
+
+
+Na Figura~\ref{img:evolucao-idh}, é possível observar no mapa a presença de municípios com os maiores crescimentos absolutos no período (tonalidades mais claras) distribuídas de forma aleatória, porém com maior ocorrência na região Centro-Oeste. Por outro lado, em relação aos municípios que indicaram os menores crescimentos (tonalidades mais escuras), há duas situações extremamente opostas; a primeira, na qual municípios com indicadores mais elevados apresentaram um crescimento pequeno, perante aos excelentes índices apresentados previamente; e a segunda situação, em que os municípios com os piores indicadores não conseguiram apresentar crescimento significativo perante a restrita situação.
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.40\textwidth]{evolucao.png}
 \caption{Evolução do índice de desenvolvimento humano entre os anos de 1991 e 2010 (Fonte: Próprio autor).}
 \label{img:evolucao-idh}
 \end{figure}
-
-Na Figura~\ref{img:evolucao-idh}, é possível observar no mapa, cujos dados foram normalizados pelo processo descrito na Seção~\ref{section:redimensionamento}, a presença de municípios com os maiores crescimentos absolutos no período (tonalidades mais claras) distribuídas de forma aleatória, porém com maior ocorrência na região Centro-Oeste. Por outro lado, em relação aos municípios que indicaram os menores crescimentos (tonalidades mais escuras), há duas situações extremamente opostas; a primeira, na qual municípios com indicadores mais elevados apresentaram um crescimento pequeno, perante aos excelentes índices apresentados previamente; e a segunda situação, em que os municípios com os piores indicadores não conseguiram apresentar crescimento significativo perante a restrita situação.
 
 De modo geral, esse estudo de caso evidencia os dois extremos sociais do Brasil, o primeiro grupo com altos índices, o que dificulta a presença de grandes variações, enquanto o outro grupo composto por municípios com maiores restrições a recursos e, consequentemente, dificuldade no crescimento dos indicadores. 
 
@@ -229,18 +247,13 @@ De modo análogo, nesse estudo de caso foi realizada a mesma avaliação utiliza
 
 O resultado é apresentado na Figura~\ref{img:qualidade-de-vida-brasil}, cuja representação utiliza a interpolação entre as cores laranja (menor qualidade de vida) e azul (maior qualidade de vida), na qual é possível observar um predomínio dos melhores índices na regiões Sul, Sudeste e Centro-Oeste. Como destaque dos melhores índices temos as capitais dos estados na faixa centro-sul do país e diversos municípios do interior dos estados de São Paulo, Paraná, Minas Gerais, Santa Catarina, Rio Grande do Sul e Rio de Janeiro. Como destaque negativo tem-se as regiões Norte e Nordeste, em que inclusive a maioria das capitais tem índices inferiores a muitos municípios das demais regiões.
 
-\section{Conclusão}
+\section{Considerações Finais}
 \label{section:conclusao}
 Em suma, com base nos resultados obtidos dos estudos de casos executados e presentes neste trabalho, assim como os que não foram incluídos (análises referentes a renda e longevidade, de municípios e estados no três períodos citados), em relação ao conjunto de dados socioeconômicos, é possível observar a diferença relevante na qualidade de vida nas regiões Sul e Sudeste em detrimento das regiões Norte e Nordeste, em que, vale-se ressaltar o crescimento do nível dos indicadores referentes aos municípios da região Centro-Oeste, principalmente no período entre 2000 e 2010.
 
 Em relação a utilização da técnica de visualização computacional \textit{Choropleth Map}, essa consiste em uma opção intuitiva e de interpretação facilitada, principalmente se forem adotadas tonalidades de cores ou degradês de simples distinção ao olhar humano, ressaltando possíveis deficiências cromáticas visuais. No caso específico do mapa coroplético do território brasileiro, deve-se salientar dois pontos, a grande extensão territorial facilita a perda de detalhes para interpretação e a excessiva fragmentação e irregularidade de formato dos municípios (quando comparado o mapa brasileiro na Figura~\ref{img:qualidade-de-vida-brasil} e norte-americano na Figura~\ref{img:lugares-viver-usa}) em sua maioria combinada com o uso inadequado de uma cor pode viabilizar uma interpretação errônea em decorrência da proporção espacial das divisas territoriais e seus respectivos municípios.
 
-Portanto, o uso de mapas coropléticos para a visualização de dados dessa categoria (georreferenciados) trata-se de umas das melhores opções, ressaltando a adequada escolha de cores, tonalidades e proporções espaciais de modo a não inferir na interpretação do usuário.s
-
-
-
-
-
+Portanto, o uso de mapas coropléticos para a visualização de dados dessa categoria (georreferenciados) trata-se de umas das melhores opções, ressaltando a adequada escolha de cores, tonalidades e proporções espaciais de modo a não inferir na interpretação do usuários.
 
 
 \begin{thebibliography}{1}
