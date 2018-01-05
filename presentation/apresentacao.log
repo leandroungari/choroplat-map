@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  4 JAN 2018 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  5 JAN 2018 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1445,107 +1445,100 @@ Package pdftex.def Info: images/analfabetismo-franca.jpg used on input line 279
  <./images/analfabetismo-franca.jpg>]
 [11
 
-] <images/educacao-1991.png, id=370, 612.2875pt x 640.3925pt>
-File: images/educacao-1991.png Graphic file (type png)
+] [12
 
-<use images/educacao-1991.png>
-Package pdftex.def Info: images/educacao-1991.png used on input line 310.
-(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
- [12
+] <images/comparativo.png, id=399, 1552.96465pt x 534.46185pt>
+File: images/comparativo.png Graphic file (type png)
 
- <./images/educacao-1991.png>]
-<images/educacao-2000.png, id=401, 612.2875pt x 640.3925pt>
-File: images/educacao-2000.png Graphic file (type png)
-
-<use images/educacao-2000.png>
-Package pdftex.def Info: images/educacao-2000.png used on input line 323.
-(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+<use images/comparativo.png>
+Package pdftex.def Info: images/comparativo.png used on input line 322.
+(pdftex.def)             Requested size: 338.59023pt x 116.52179pt.
  [13
 
- <./images/educacao-2000.png>]
-<images/educacao-2010.png, id=433, 612.2875pt x 640.3925pt>
-File: images/educacao-2010.png Graphic file (type png)
+ <./images/comparativo.png>] [14
 
-<use images/educacao-2010.png>
-Package pdftex.def Info: images/educacao-2010.png used on input line 336.
-(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
- [14
+] [15
 
- <./images/educacao-2010.png>]
-<images/longevidade.png, id=465, 612.2875pt x 640.3925pt>
+]
+<images/longevidade.png, id=490, 612.2875pt x 640.3925pt>
 File: images/longevidade.png Graphic file (type png)
 
 <use images/longevidade.png>
-Package pdftex.def Info: images/longevidade.png used on input line 348.
+Package pdftex.def Info: images/longevidade.png used on input line 361.
 (pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
- [15
+ [16
 
  <./images/longevidade.png>]
-<images/frequencia.png, id=496, 559.67233pt x 342.86232pt>
+<images/frequencia.png, id=521, 559.67233pt x 342.86232pt>
 File: images/frequencia.png Graphic file (type png)
 
 <use images/frequencia.png>
-Package pdftex.def Info: images/frequencia.png used on input line 360.
-(pdftex.def)             Requested size: 131.45245pt x 80.53079pt.
- [16
+Package pdftex.def Info: images/frequencia.png used on input line 384.
+(pdftex.def)             Requested size: 185.22598pt x 113.4745pt.
+ [17
 
  <./images/frequencia.png>]
-<images/longevidade-ampliado.png, id=527, 612.2875pt x 640.3925pt>
+<images/longevidade-ampliado.png, id=552, 612.2875pt x 640.3925pt>
 File: images/longevidade-ampliado.png Graphic file (type png)
 
 <use images/longevidade-ampliado.png>
-Package pdftex.def Info: images/longevidade-ampliado.png used on input line 372
+Package pdftex.def Info: images/longevidade-ampliado.png used on input line 396
 .
 (pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
- [17
-
- <./images/longevidade-ampliado.png>]
-<images/idh-1991.png, id=558, 612.2875pt x 640.3925pt>
-File: images/idh-1991.png Graphic file (type png)
-
-<use images/idh-1991.png>
-Package pdftex.def Info: images/idh-1991.png used on input line 385.
-(pdftex.def)             Requested size: 119.50279pt x 124.9884pt.
  [18
 
- <./images/idh-1991.png>]
-<images/idh-2010.png, id=590, 612.2875pt x 640.3925pt>
-File: images/idh-2010.png Graphic file (type png)
+ <./images/longevidade-ampliado.png>]
+[19
 
-<use images/idh-2010.png>
-Package pdftex.def Info: images/idh-2010.png used on input line 398.
-(pdftex.def)             Requested size: 119.50279pt x 124.9884pt.
- [19
+] [20
 
- <./images/idh-2010.png>]
-<images/evolucao.png, id=622, 612.2875pt x 640.3925pt>
+] <images/comparativo-idh.png, id=643, 1028.58698pt x 536.14256pt>
+File: images/comparativo-idh.png Graphic file (type png)
+
+<use images/comparativo-idh.png>
+Package pdftex.def Info: images/comparativo-idh.png used on input line 428.
+(pdftex.def)             Requested size: 258.91765pt x 134.95975pt.
+ [21
+
+ <./images/comparativo-idh.png>]
+<images/evolucao.png, id=675, 612.2875pt x 640.3925pt>
 File: images/evolucao.png Graphic file (type png)
 
 <use images/evolucao.png>
-Package pdftex.def Info: images/evolucao.png used on input line 411.
+Package pdftex.def Info: images/evolucao.png used on input line 441.
 (pdftex.def)             Requested size: 119.50279pt x 124.9884pt.
- [20
+ [22
 
- <./images/evolucao.png>]
-<images/usa.png, id=653, 881.52592pt x 594.96698pt>
+ <./images/evolucao.png>] [23
+
+] [24
+
+]
+<images/usa.png, id=764, 881.52592pt x 594.96698pt>
 File: images/usa.png Graphic file (type png)
  <use images/usa.png>
-Package pdftex.def Info: images/usa.png used on input line 423.
+Package pdftex.def Info: images/usa.png used on input line 476.
 (pdftex.def)             Requested size: 239.00558pt x 161.30595pt.
 
-[21
+[25
 
- <./images/usa.png>]
-<images/qualidade-de-vida.png, id=685, 612.2875pt x 640.3925pt>
+ <./images/usa.png>] [26
+
+]
+<images/qualidade-de-vida.png, id=827, 612.2875pt x 640.3925pt>
 File: images/qualidade-de-vida.png Graphic file (type png)
 
 <use images/qualidade-de-vida.png>
-Package pdftex.def Info: images/qualidade-de-vida.png used on input line 435.
+Package pdftex.def Info: images/qualidade-de-vida.png used on input line 510.
 (pdftex.def)             Requested size: 159.333pt x 166.64468pt.
- [22
+ [27
 
  <./images/qualidade-de-vida.png>]
-[23
+[28
+
+] [29
+
+] [30
 
 ]
 \tf@nav=\write6
@@ -1557,31 +1550,32 @@ Package pdftex.def Info: images/qualidade-de-vida.png used on input line 435.
 \tf@snm=\write8
 \openout8 = `apresentacao.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 563.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 563.
  (./apresentacao.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 563.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 563.
 Package rerunfilecheck Info: File `apresentacao.out' has not changed.
 (rerunfilecheck)             Checksum: 5048FB5539BBD39F9E58149186AE349F;169.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 563.
  ) 
 Here is how much of TeX's memory you used:
- 18887 strings out of 494792
- 356081 string characters out of 6176497
+ 18911 strings out of 494792
+ 356130 string characters out of 6176497
  452362 words of memory out of 5000000
- 21639 multiletter control sequences out of 15000+600000
- 33930 words of font info for 54 fonts, out of 8000000 for 9000
+ 21643 multiletter control sequences out of 15000+600000
+ 37037 words of font info for 59 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  56i,23n,56p,415b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb>
-Output written on apresentacao.pdf (23 pages, 3948151 bytes).
+/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmsso8.pfb>
+Output written on apresentacao.pdf (30 pages, 3629122 bytes).
 PDF statistics:
- 777 PDF objects out of 1000 (max. 8388607)
- 701 compressed objects within 8 object streams
- 50 named destinations out of 1000 (max. 500000)
- 9358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 983 PDF objects out of 1000 (max. 8388607)
+ 903 compressed objects within 10 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 9855 words of extra memory for PDF output out of 10000 (max. 10000000)
 

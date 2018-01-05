@@ -278,6 +278,8 @@ A técnica de visualização computacional escolhida foi a \textit{Choropleth Ma
 
 \end{frame}
 
+
+
 %==================
 \section{Estudos de Caso}
 \begin{frame}
@@ -300,14 +302,12 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 \frametitle{Estudo de Caso I}
 \justifying
 
-\begin{figure}
-\centering
-\includegraphics[width=0.33\textwidth]{images/educacao-1991.png}
-\caption{IDHM Educação 1991.}
-\end{figure}
+Nesse estudo de caso, busca-se analisar a evolução dos dados de um indicador específico (índice de educação) em função do tempo através da comparação entre cada mapa.
 
 
 \end{frame}
+
+
 
 \begin{frame}
 \frametitle{Estudo de Caso I}
@@ -315,25 +315,38 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 
 \begin{figure}
 \centering
-\includegraphics[width=0.33\textwidth]{images/educacao-2000.png}
-\caption{IDHM Educação 2000.}
+\includegraphics[width=0.85\textwidth]{images/comparativo.png}
+\caption{IDHM Educação 1991, 2000 e 2010.}
 \end{figure}
 
-
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Estudo de Caso I}
 \justifying
 
-\begin{figure}
-\centering
-\includegraphics[width=0.33\textwidth]{images/educacao-2010.png}
-\caption{IDHM Educação 2010.}
-\end{figure}
+\begin{itemize}
+
+\item Concentração de índices mais elevados do indicador (tonalidades mais claras) nas faixa sudeste do mapa.
+
+\item Evolução gradativa e de forma significativa das regiões de menores índices nos períodos analisados, reduzindo assim, disparidade entre regiões.
+
+\end{itemize}
 
 
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Estudo de Caso II}
+\justifying
+
+Nesse segundo estudo de caso, objetiva-se analisar o impacto da distribuição do conjunto de dados no processo de visualização computacional.
+
+
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Estudo de Caso II}
@@ -351,11 +364,22 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 \frametitle{Estudo de Caso II}
 \justifying
 
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+Alta concentração dos municípios na faixa entre 0,6 e 0,9.
+
+\end{column}
+\begin{column}{0.5\textwidth}
+
 \begin{figure}
 \centering
-\includegraphics[width=0.33\textwidth]{images/frequencia.png}
+\includegraphics[width=0.93\textwidth]{images/frequencia.png}
 \caption{Gráfico de distribuição de ocorrências.}
 \end{figure}
+
+\end{column}
+\end{columns}
 
 \end{frame}
 
@@ -372,15 +396,21 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 \end{frame}
 
 \begin{frame}
+\frametitle{Estudo de Caso II}
+\justifying
+
+Foi realizado um redimensionamento do domínio de dados de forma a englobar
+a maior quantidade de tonalidades possíveis.
+
+Como resultado do processamento, composta por uma maior quantidade de variações, o que proporciona melhor distinção dos dados representados por parte do usuário.
+
+\end{frame}
+
+\begin{frame}
 \frametitle{Estudo de Caso III}
 \justifying
 
-
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{images/idh-1991.png}
-\caption{Índice de desenvolvimento humano em 1991.}
-\end{figure}
+Nesse terceiro estudo de caso, busca-se avaliar a utilização da representação visual para realização de um comparativo da evolução do conjunto de dados em um período de tempo específico.
 
 \end{frame}
 
@@ -391,8 +421,8 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 
 \begin{figure}
 \centering
-\includegraphics[width=0.3\textwidth]{images/idh-2010.png}
-\caption{Índice de desenvolvimento humano em 1991.}
+\includegraphics[width=0.65\textwidth]{images/comparativo-idh.png}
+\caption{Comparativo do IDH entre os anos de 1991 e 2010.}
 \end{figure}
 
 \end{frame}
@@ -411,6 +441,30 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 \end{frame}
 
 \begin{frame}
+\frametitle{Estudo de Caso III}
+\justifying
+
+De modo geral, esse estudo de caso evidencia os dois extremos sociais do Brasil, o primeiro grupo com altos índices,
+o que dificulta a presença de grandes variações, enquanto o outro grupo composto por municípios com maiores restrições
+a recursos e, consequentemente, dificuldade no crescimento dos indicadores.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Estudo de Caso IV}
+\justifying
+
+Nesse estudo de caso objetiva-se analisar a qualidade de vida dos municípios brasileiros através da análise de
+um conjunto de indicadores.
+
+\begin{itemize}
+\item \textit{Where Are the Hardest Places to Live in the U.S.?}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
 \frametitle{Estudo de Caso IV}
 \justifying
 
@@ -418,6 +472,28 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 \centering
 \includegraphics[width=0.6\textwidth]{images/usa.png}
 \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Estudo de Caso IV}
+\justifying
+
+Equivalência de indicadores utilizados: 
+
+\begin{center}
+  \begin{tabular}{ c | c }
+    \hline
+    \textbf{Estados Unidos} & \textbf{Brasil} \\ \hline
+    Educação & IDHM Educação \\ \hline
+    Renda média domiciliar & Renda per capita \\ \hline
+    Taxa de desemprego & Taxa de desemprego \\ \hline
+    Taxa de ocupação &  Taxa de atividade \\ \hline
+    Expectativa de vida & Expectativa de vida\\ \hline
+    Obesidade & - - - 	\\
+    \hline
+  \end{tabular}
+\end{center}
 
 
 \end{frame}
@@ -431,15 +507,53 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 \includegraphics[width=0.4\textwidth]{images/qualidade-de-vida.png}
 \end{figure}
 
-
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Estudo de Caso IV}
+\justifying
+
+\begin{itemize}
+\item Predomínio dos melhores índices na região Centro-Sul. 
+
+\item Melhores índices temos as capitais dos estados na faixa centro-sul do país e diversos municípios do interior dos estados destes estados.
+
+\item Como destaque negativo tem-se as regiões Norte e Nordeste, em que inclusive a maioria das capitais tem índices inferiores a muitos municípios das demais regiões.
+
+\end{itemize}
+
+
+
+
+
+\end{frame}
 %================
 \begin{frame}
 \frametitle{Considerações Finais}
 \justifying
+\begin{itemize}
 
+\item Diferença relevante na qualidade de vida nas regiões Sul e Sudeste em detrimento das regiões Norte e Nordeste.
 
+\item o crescimento do nível dos indicadores referentes aos municípios da região Centro-Oeste,
+principalmente no período entre 2000 e 2010.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Considerações Finais}
+\justifying
+
+\begin{itemize}
+
+\item Consiste em uma alternativa intuitiva e de interpretação facilitada, principalmente se forem adotadas tonalidades de cores ou degradês de simples distinção ao olhar humano.
+
+\item Em mapas coropléticos do território brasileiro, deve-se salientar a grande extensão territorial, que
+facilita a perda de detalhes para interpretação; e a excessiva fragmentação e irregularidade de formato dos municípios.
+
+\end{itemize}
 
 
 
@@ -448,6 +562,6 @@ Com o intuito de avaliar a utilização da técnica de visualização computacio
 
 \end{document}
 
-\end{document}
+
               
             
