@@ -1,4 +1,4 @@
 \beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Conjunto de Dados}{4}{0}{1}
-\beamer@sectionintoc {2}{T\IeC {\'e}cnica de Visualiza\IeC {\c c}\IeC {\~a}o}{6}{0}{2}
-\beamer@sectionintoc {3}{Estudos de Caso}{10}{0}{3}
+\beamer@sectionintoc {1}{Conjunto de Dados}{5}{0}{1}
+\beamer@sectionintoc {2}{T\IeC {\'e}cnica de Visualiza\IeC {\c c}\IeC {\~a}o}{8}{0}{2}
+\beamer@sectionintoc {3}{Estudos de Caso}{11}{0}{3}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  4 JAN 2018 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  4 JAN 2018 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1353,32 +1353,34 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
 
 ] [3
 
+] [4
+
 ]
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 162.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 178.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 162
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 178
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 162
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 178
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 162.
+(Font)              <10.95> on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 162.
+(Font)              <8> on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 162.
-LaTeX Font Info:    Try loading font information for U+msa on input line 162.
+(Font)              <6> on input line 178.
+LaTeX Font Info:    Try loading font information for U+msa on input line 178.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1386,7 +1388,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 162.
+LaTeX Font Info:    Try loading font information for U+msb on input line 178.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1395,136 +1397,155 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 162.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 178.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 162.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 178.
 
 
-<images/atlas.png, id=128, 15.22746pt x 18.36963pt>
+<images/atlas.png, id=158, 15.22746pt x 18.36963pt>
 File: images/atlas.png Graphic file (type png)
  <use images/atlas.png>
-Package pdftex.def Info: images/atlas.png used on input line 162.
-(pdftex.def)             Requested size: 35.8512pt x 43.25128pt.
+Package pdftex.def Info: images/atlas.png used on input line 178.
+(pdftex.def)             Requested size: 47.80037pt x 57.66698pt.
 
-[4
+[5
 
- <./images/atlas.png>] <images/pnud.png, id=161, 225.84375pt x 225.84375pt>
+ <./images/atlas.png>] <images/pnud.png, id=191, 225.84375pt x 225.84375pt>
 File: images/pnud.png Graphic file (type png)
 
 <use images/pnud.png>
-Package pdftex.def Info: images/pnud.png used on input line 195.
+Package pdftex.def Info: images/pnud.png used on input line 205.
 (pdftex.def)             Requested size: 89.62556pt x 89.62599pt.
- [5
+ [6
 
- <./images/pnud.png>] [6
+ <./images/pnud.png>] [7
 
-] [7
+] [8
 
 ]
-<images/boston-density.jpg, id=252, 738.76pt x 554.07pt>
+<images/boston-density.jpg, id=282, 738.76pt x 554.07pt>
 File: images/boston-density.jpg Graphic file (type jpg)
 
 <use images/boston-density.jpg>
-Package pdftex.def Info: images/boston-density.jpg used on input line 242.
+Package pdftex.def Info: images/boston-density.jpg used on input line 245.
 (pdftex.def)             Requested size: 179.25114pt x 134.43367pt.
- [8
+ [9
 
  <./images/boston-density.jpg>]
-<images/analfabetismo-franca.jpg, id=281, 328.46715pt x 344.36655pt>
+<images/analfabetismo-franca.jpg, id=311, 328.46715pt x 344.36655pt>
 File: images/analfabetismo-franca.jpg Graphic file (type jpg)
 
 <use images/analfabetismo-franca.jpg>
-Package pdftex.def Info: images/analfabetismo-franca.jpg used on input line 269
+Package pdftex.def Info: images/analfabetismo-franca.jpg used on input line 279
 .
 (pdftex.def)             Requested size: 119.50279pt x 125.2855pt.
- [9
+ [10
 
  <./images/analfabetismo-franca.jpg>]
-[10
+[11
 
-] <images/educacao-1991.png, id=339, 612.2875pt x 640.3925pt>
+] <images/educacao-1991.png, id=370, 612.2875pt x 640.3925pt>
 File: images/educacao-1991.png Graphic file (type png)
 
 <use images/educacao-1991.png>
-Package pdftex.def Info: images/educacao-1991.png used on input line 291.
-(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
- [11
-
- <./images/educacao-1991.png>]
-<images/educacao-2000.png, id=371, 612.2875pt x 640.3925pt>
-File: images/educacao-2000.png Graphic file (type png)
-
-<use images/educacao-2000.png>
-Package pdftex.def Info: images/educacao-2000.png used on input line 304.
+Package pdftex.def Info: images/educacao-1991.png used on input line 310.
 (pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
  [12
 
- <./images/educacao-2000.png>]
-<images/educacao-2010.png, id=402, 612.2875pt x 640.3925pt>
-File: images/educacao-2010.png Graphic file (type png)
+ <./images/educacao-1991.png>]
+<images/educacao-2000.png, id=401, 612.2875pt x 640.3925pt>
+File: images/educacao-2000.png Graphic file (type png)
 
-<use images/educacao-2010.png>
-Package pdftex.def Info: images/educacao-2010.png used on input line 317.
+<use images/educacao-2000.png>
+Package pdftex.def Info: images/educacao-2000.png used on input line 323.
 (pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
  [13
 
- <./images/educacao-2010.png>]
-<images/longevidade.png, id=434, 612.2875pt x 640.3925pt>
-File: images/longevidade.png Graphic file (type png)
-
-<use images/longevidade.png>
-Package pdftex.def Info: images/longevidade.png used on input line 329.
-(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
- [14
-
- <./images/longevidade.png>]
-<images/frequencia.png, id=466, 559.67233pt x 342.86232pt>
-File: images/frequencia.png Graphic file (type png)
-
-<use images/frequencia.png>
-Package pdftex.def Info: images/frequencia.png used on input line 341.
-(pdftex.def)             Requested size: 131.45245pt x 80.53079pt.
- [15
-
- <./images/frequencia.png>]
-<images/longevidade-ampliado.png, id=497, 612.2875pt x 640.3925pt>
-File: images/longevidade-ampliado.png Graphic file (type png)
-
-<use images/longevidade-ampliado.png>
-Package pdftex.def Info: images/longevidade-ampliado.png used on input line 353
-.
-(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
- [16
-
- <./images/longevidade-ampliado.png>]
+ <./images/educacao-2000.png>]
+<images/educacao-2010.png, id=433, 612.2875pt x 640.3925pt>
 File: images/educacao-2010.png Graphic file (type png)
 
 <use images/educacao-2010.png>
-Package pdftex.def Info: images/educacao-2010.png used on input line 366.
+Package pdftex.def Info: images/educacao-2010.png used on input line 336.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [14
+
+ <./images/educacao-2010.png>]
+<images/longevidade.png, id=465, 612.2875pt x 640.3925pt>
+File: images/longevidade.png Graphic file (type png)
+
+<use images/longevidade.png>
+Package pdftex.def Info: images/longevidade.png used on input line 348.
+(pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
+ [15
+
+ <./images/longevidade.png>]
+<images/frequencia.png, id=496, 559.67233pt x 342.86232pt>
+File: images/frequencia.png Graphic file (type png)
+
+<use images/frequencia.png>
+Package pdftex.def Info: images/frequencia.png used on input line 360.
+(pdftex.def)             Requested size: 131.45245pt x 80.53079pt.
+ [16
+
+ <./images/frequencia.png>]
+<images/longevidade-ampliado.png, id=527, 612.2875pt x 640.3925pt>
+File: images/longevidade-ampliado.png Graphic file (type png)
+
+<use images/longevidade-ampliado.png>
+Package pdftex.def Info: images/longevidade-ampliado.png used on input line 372
+.
 (pdftex.def)             Requested size: 131.45245pt x 137.48627pt.
  [17
 
-]
-<images/usa.png, id=557, 881.52592pt x 594.96698pt>
+ <./images/longevidade-ampliado.png>]
+<images/idh-1991.png, id=558, 612.2875pt x 640.3925pt>
+File: images/idh-1991.png Graphic file (type png)
+
+<use images/idh-1991.png>
+Package pdftex.def Info: images/idh-1991.png used on input line 385.
+(pdftex.def)             Requested size: 119.50279pt x 124.9884pt.
+ [18
+
+ <./images/idh-1991.png>]
+<images/idh-2010.png, id=590, 612.2875pt x 640.3925pt>
+File: images/idh-2010.png Graphic file (type png)
+
+<use images/idh-2010.png>
+Package pdftex.def Info: images/idh-2010.png used on input line 398.
+(pdftex.def)             Requested size: 119.50279pt x 124.9884pt.
+ [19
+
+ <./images/idh-2010.png>]
+<images/evolucao.png, id=622, 612.2875pt x 640.3925pt>
+File: images/evolucao.png Graphic file (type png)
+
+<use images/evolucao.png>
+Package pdftex.def Info: images/evolucao.png used on input line 411.
+(pdftex.def)             Requested size: 119.50279pt x 124.9884pt.
+ [20
+
+ <./images/evolucao.png>]
+<images/usa.png, id=653, 881.52592pt x 594.96698pt>
 File: images/usa.png Graphic file (type png)
  <use images/usa.png>
-Package pdftex.def Info: images/usa.png used on input line 378.
+Package pdftex.def Info: images/usa.png used on input line 423.
 (pdftex.def)             Requested size: 239.00558pt x 161.30595pt.
 
-[18
+[21
 
  <./images/usa.png>]
-<images/qualidade-de-vida.png, id=589, 612.2875pt x 640.3925pt>
+<images/qualidade-de-vida.png, id=685, 612.2875pt x 640.3925pt>
 File: images/qualidade-de-vida.png Graphic file (type png)
 
 <use images/qualidade-de-vida.png>
-Package pdftex.def Info: images/qualidade-de-vida.png used on input line 390.
+Package pdftex.def Info: images/qualidade-de-vida.png used on input line 435.
 (pdftex.def)             Requested size: 159.333pt x 166.64468pt.
- [19
+ [22
 
  <./images/qualidade-de-vida.png>]
-[20
+[23
 
 ]
 \tf@nav=\write6
@@ -1536,31 +1557,31 @@ Package pdftex.def Info: images/qualidade-de-vida.png used on input line 390.
 \tf@snm=\write8
 \openout8 = `apresentacao.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 404.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 404.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
  (./apresentacao.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 404.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 404.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
 Package rerunfilecheck Info: File `apresentacao.out' has not changed.
 (rerunfilecheck)             Checksum: 5048FB5539BBD39F9E58149186AE349F;169.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 404.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
  ) 
 Here is how much of TeX's memory you used:
- 18812 strings out of 494792
- 354662 string characters out of 6176497
- 450362 words of memory out of 5000000
- 21591 multiletter control sequences out of 15000+600000
- 33048 words of font info for 45 fonts, out of 8000000 for 9000
+ 18887 strings out of 494792
+ 356081 string characters out of 6176497
+ 452362 words of memory out of 5000000
+ 21639 multiletter control sequences out of 15000+600000
+ 33930 words of font info for 54 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 56i,23n,56p,392b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,23n,56p,415b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsso8.pfb>
-Output written on apresentacao.pdf (20 pages, 2956578 bytes).
+/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb>
+Output written on apresentacao.pdf (23 pages, 3948151 bytes).
 PDF statistics:
- 678 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 44 named destinations out of 1000 (max. 500000)
- 9343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 777 PDF objects out of 1000 (max. 8388607)
+ 701 compressed objects within 8 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 9358 words of extra memory for PDF output out of 10000 (max. 10000000)
 

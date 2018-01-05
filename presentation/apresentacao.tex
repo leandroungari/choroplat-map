@@ -128,11 +128,25 @@ Universidade Estadual Paulista \\ % Your institution for the title page
 \frametitle{Introdução}
 \justifying
 
+O conceito de Desenvolvimento Humano objetiva mensurar o avanço de uma população não somente considerando os aspectos de âmbito econômico, mas também características sociais, culturais e políticas que influenciam diretamente na
+qualidade da vida. 
 
+A partir desse conceito, o Índice de Desenvolvimento Humano (IDH) foi criado com o intuito de contrapor outro indicador muito utilizado, o Produto Interno Bruto (PIB) per capita.
 
 
 
 \end{frame}
+
+%==================
+\begin{frame}
+\frametitle{Introdução}
+\justifying
+
+A utilização de representações visuais para a interpretação dos indicadores consiste em uma importante ferramenta de
+interpretação, especialmente em um domínio de dados referentes a localidades específicas, possibilita o uso de mapas, e consequentemente, o agrupamento de regiões semelhantes para a identificações de características de uma região em detrimento das demais.
+
+\end{frame}
+
 
 %==================
 \section{Conjunto de Dados}
@@ -141,12 +155,14 @@ Universidade Estadual Paulista \\ % Your institution for the title page
 \justifying
 
 \begin{columns}
-\begin{column}{0.7\textwidth}
+\begin{column}{0.5\textwidth}
 
+
+O conjunto de dados é proveniente do Atlas de Desenvolvimento Humano do PNUD Brasil, referente ao ano de 2013, o qual contém informações socioeconômicas de todos os estados e municípios brasileiros referentes aos anos de 1991, 2000 e 2010.
 
 \end{column}
 
-\begin{column}{0.3\textwidth}
+\begin{column}{0.4\textwidth}
 
 \begin{figure}
 \centering
@@ -170,6 +186,7 @@ Universidade Estadual Paulista \\ % Your institution for the title page
 
 \begin{column}{0.5\textwidth}
 
+O IDH foi criado no início da década de 90, para o Programa das Nações Unidas para o Desenvolvimento (PNUD), pelo conselheiro especial \textit{Mahbub ul Haq}, através da combinação de três componentes básicos do desenvolvimento humano: 
 
 \end{column}
 
@@ -181,50 +198,36 @@ Universidade Estadual Paulista \\ % Your institution for the title page
 \caption{Programa de Desenvolvimento das Nação Unidas.}
 \end{figure}
 
-\begin{figure}
-\centering
-%\includegraphics[scale=0.2]{images/paper.jpg}
-\end{figure}
-
 
 \end{column}
 \end{columns}
 
+\end{frame}
 
+%==================
+\begin{frame}
+\frametitle{Índice de Desenvolvimento Humano}
+\justifying
+
+\begin{itemize}
+\item Longevidade, que também reflete, entre outras coisas, as condições de saúde da população; medida pela esperança de vida ao nascer;
+
+\item Educação, medida por uma combinação da taxa de alfabetização de adultos e a taxa combinada de matrícula nos níveis de ensino fundamental, médio e superior;
+
+\item Renda, medida pelo poder de compra da população, baseado no PIB per capita ajustado ao custo de vida local para torná-lo comparável entre países e regiões, através da metodologia conhecida como paridade do poder de compra.
+\end{itemize}
 
 \end{frame}
 
 %==================
 \section{Técnica de Visualização}
-\begin{frame}
-\frametitle{Técnica de Visualização}
-\justifying
 
-\begin{columns}
-
-\begin{column}{0.5\textwidth}
-
-
-\end{column}
-
-\begin{column}{0.5\textwidth}
-
-\begin{figure}
-\centering
-%\includegraphics[scale=0.2]{images/paper.jpg}
-\end{figure}
-
-
-\end{column}
-\end{columns}
-
-
-\end{frame}
 
 \begin{frame}
 \frametitle{Técnica de Visualização}
 \justifying
 
+A técnica de visualização computacional escolhida foi a \textit{Choropleth Map}, ou Mapas Coropléticos, a qual consiste em um mapa temático quantitativo comum, em que as magnitudes das estatísticas baseadas em área (geralmente dados de atributo derivados) são retratadas através do preenchimento de cores, tons ou padrões, à medida que ocorrem dentro dos limites das áreas da unidade.
 
 \end{frame}
 
@@ -243,13 +246,20 @@ Universidade Estadual Paulista \\ % Your institution for the title page
 
 %==================
 \begin{frame}
-\frametitle{Choropleth Map}
+\frametitle{Técnica de Visualização}
 \justifying
 
 \begin{columns}
 
 \begin{column}{0.5\textwidth}
 
+\begin{itemize}
+
+\item O termo Choropleth Map, foi primeiramente utilizado pelo geógrafo americano John Kirtland Wright em 1938, na sua obra \textit{Problems in Population Mapping}.
+
+\item Por sua vez, o primeiro mapa coroplético conhecido foi construído pelo cartógrafo francês Pierre Charles François Dupin, em que são representados os índices de analfabetismo nas províncias francesas em 1826.
+
+\end{itemize}
 
 \end{column}
 
@@ -273,6 +283,15 @@ Universidade Estadual Paulista \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Estudos de Caso}
 \justifying
+
+Com o intuito de avaliar a utilização da técnica de visualização computacional \textit{Choropleth Map}, foram conduzidos os seguintes estudos de caso utilizando a base de dados do Atlas de Desenvolvimento Humano:
+
+\begin{itemize}
+\item Estudo de Caso I - Comparativo do Índice de Educação
+\item Estudo de Caso II - Redimensionamento do Domínio de Dados
+\item Estudo de Caso III - Evolução dos Índice de Desenvolvimento Humano
+\item Estudo de Caso IV - Qualidade de Vida no Brasil
+\end{itemize}
 
 
 \end{frame}
@@ -359,8 +378,34 @@ Universidade Estadual Paulista \\ % Your institution for the title page
 
 \begin{figure}
 \centering
-\includegraphics[width=0.33\textwidth]{images/educacao-2010.png}
-\caption{IDHM Educação 2010.}
+\includegraphics[width=0.3\textwidth]{images/idh-1991.png}
+\caption{Índice de desenvolvimento humano em 1991.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Estudo de Caso III}
+\justifying
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{images/idh-2010.png}
+\caption{Índice de desenvolvimento humano em 1991.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Estudo de Caso III}
+\justifying
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{images/evolucao.png}
+\caption{Evolução do índice de desenvolvimento humano entre os anos de 1991 e 2010 (Normalizado).}
 \end{figure}
 
 \end{frame}
